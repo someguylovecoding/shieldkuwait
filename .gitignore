@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# Except these
+!.gitignore
+!.github/
+!.github/**
+!kuwait shield/
+!kuwait shield/**
+
+# Ignore claude local settings inside kuwait shield
+kuwait shield/.claude/
