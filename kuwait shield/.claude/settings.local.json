@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed \"s/'''',ar:.*//\")",
+      "Bash(node -c script.js)",
+      "Bash(where.exe node:*)",
+      "Bash(npm --version)",
+      "Bash(npx --version)",
+      "Bash(where python3:*)",
+      "Bash(where python:*)",
+      "Bash(where node:*)",
+      "Bash(where npm:*)",
+      "Bash(where npx:*)",
+      "Bash(python3 -c \"import sys; print\\(sys.version\\)\")",
+      "Bash(echo \"exit: $?\")",
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:xposedornot.com)",
+      "WebFetch(domain:www.spurnow.com)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:www.verloop.io)",
+      "WebFetch(domain:ai.google.dev)",
+      "WebFetch(domain:www.site24x7.com)",
+      "Bash(cd:*)",
+      "Read(//c/Users/alial/OneDrive/Desktop/d/kuwait shield/**)"
+    ]
+  }
+}
