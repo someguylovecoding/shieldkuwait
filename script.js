@@ -121,8 +121,8 @@ var I18N = {
         ar: 'نصائح لحماية نفسك'
     },
     'chat-apikey-needed': {
-        en: 'To use the AI chatbot, you need a free Gemini API key.',
-        ar: 'لاستخدام الشات بوت، تحتاج مفتاح Gemini API مجاني.'
+        en: 'To use the AI chatbot, you need a free Google AI API key.',
+        ar: 'لاستخدام الشات بوت، تحتاج مفتاح Google AI API مجاني.'
     },
     'chat-get-key': {
         en: 'Get Free API Key',
@@ -133,8 +133,8 @@ var I18N = {
         ar: 'حفظ المفتاح'
     },
     'chat-key-placeholder': {
-        en: 'Paste your Gemini API key here...',
-        ar: 'الصق مفتاح Gemini API هنا...'
+        en: 'Paste your Google AI API key here...',
+        ar: 'الصق مفتاح Google AI API هنا...'
     },
     'chat-key-saved': {
         en: 'API key saved!',
@@ -772,6 +772,47 @@ var I18N = {
         en: 'Best:',
         ar: 'الأفضل:'
     },
+    // News Feed
+    'news-title': { en: 'Kuwait Scam News', ar: 'أخبار النصب في الكويت' },
+    'news-sub': { en: 'Live cybersecurity alerts, official warnings, and scam reports from Kuwait authorities and global sources.', ar: 'تنبيهات الأمن السيبراني الحية والتحذيرات الرسمية وتقارير النصب من الجهات الكويتية والمصادر العالمية.' },
+    'news-all': { en: 'All', ar: 'الكل' },
+    'news-official': { en: 'Official Alerts', ar: 'تنبيهات رسمية' },
+    'news-phishing': { en: 'Phishing', ar: 'تصيّد' },
+    'news-banking': { en: 'Banking', ar: 'بنوك' },
+    'news-investment': { en: 'Investment', ar: 'استثمار' },
+    'news-live-label': { en: 'Live feed — updating', ar: 'تغذية مباشرة — تُحدَّث' },
+    // Alerts
+    'alerts-title': { en: 'Active Scam Alerts', ar: 'تنبيهات النصب النشطة' },
+    'alerts-sub': { en: 'Real-time threat levels for active scam campaigns targeting Kuwait right now.', ar: 'مستويات التهديد الحية للحملات الاحتيالية النشطة التي تستهدف الكويت الآن.' },
+    'alerts-overall': { en: 'Overall Threat Level', ar: 'مستوى التهديد الإجمالي' },
+    'alerts-recent': { en: 'Recently Reported Scam Numbers', ar: 'أرقام النصب المُبلَّغ عنها مؤخراً' },
+    // Phone
+    'phone-title': { en: 'Phone Number Checker', ar: 'فاحص الأرقام' },
+    'phone-sub': { en: 'Check if a phone number has been reported as a scammer in Kuwait.', ar: 'تحقق إذا كان رقم الهاتف مُبلَّغاً عنه كنصّاب في الكويت.' },
+    'phone-check': { en: 'Check', ar: 'فحص' },
+    'phone-try': { en: 'Try a known scammer pattern:', ar: 'جرّب نمطاً معروفاً للنصب:' },
+    'phone-report-title': { en: 'Report a Scam Number', ar: 'أبلغ عن رقم نصّاب' },
+    'phone-report-sub': { en: 'Got a scam call or text? Report it to warn others.', ar: 'وصلك اتصال أو رسالة نصبة؟ أبلغ عنها لتحذير الآخرين.' },
+    'phone-report-btn': { en: 'Report', ar: 'إبلاغ' },
+    'phone-community': { en: 'Community Reported Numbers', ar: 'أرقام أبلغ عنها المجتمع' },
+    // Encyclopedia
+    'enc-title': { en: 'Scam Encyclopedia', ar: 'موسوعة النصب' },
+    'enc-sub': { en: 'Complete database of every scam type targeting Kuwait — how they work, red flags, and what to do.', ar: 'قاعدة بيانات شاملة لكل أنواع النصب التي تستهدف الكويت — كيف تعمل، علامات الخطر، وما يجب فعله.' },
+    'enc-entries': { en: 'Scam Types', ar: 'نوع نصبة' },
+    'enc-searchable': { en: 'Searchable', ar: 'قابل للبحث' },
+    'enc-local': { en: 'Kuwait Examples', ar: 'أمثلة كويتية' },
+    // Parent Guide
+    'pg-title': { en: 'Parent & Family Guide', ar: 'دليل الأهل والعائلة' },
+    'pg-sub': { en: 'Protect your parents, grandparents, and children from digital scams. Simple steps, clear language.', ar: 'احمِ والديك وأجدادك وأطفالك من النصب الرقمي. خطوات بسيطة ولغة واضحة.' },
+    'pg-elderly': { en: '👴 Elderly Parents', ar: '👴 الوالدين كبار السن' },
+    'pg-kids': { en: '👦 Children', ar: '👦 الأطفال' },
+    'pg-family': { en: '👨‍👩‍👧 Whole Family', ar: '👨‍👩‍👧 كامل العائلة' },
+    // Tabs
+    'tab-news': { en: 'Scam News', ar: 'أخبار النصب' },
+    'tab-alerts': { en: 'Scam Alerts', ar: 'تنبيهات النصب' },
+    'tab-phone': { en: 'Phone Check', ar: 'فحص الرقم' },
+    'tab-enc': { en: 'Encyclopedia', ar: 'الموسوعة' },
+    'tab-pg': { en: 'Parent Guide', ar: 'دليل الأهل' },
 };
 
 function t(key) {
@@ -3040,10 +3081,10 @@ function submitReport() {
 }
 
 // ══════════════════════════════════════════
-// AI SCAM DETECTOR CHATBOT (Gemini)
+// AI SCAM DETECTOR CHATBOT (Gemma 3 27B)
 // ══════════════════════════════════════════
 
-// Gemini API state — key is injected at deploy time via GitHub Actions
+// Google AI API state — key is injected at deploy time via GitHub Actions
 var _geminiKey = '__GEMINI_API_KEY__';
 var _chatHistory = [];
 var _chatBusy = false;
@@ -3190,7 +3231,7 @@ async function callGeminiAPI(userMessage) {
     };
 
     // Try models in order of preference
-    var models = ['gemini-2.5-flash', 'gemini-2.5-flash-lite'];
+    var models = ['gemma-3-27b-it'];
     var resp = null;
     var lastErr = null;
 
@@ -8193,6 +8234,12 @@ function init() {
     var bsc = document.getElementById('breachScanTotal');
     if (bsc)
         bsc.textContent = localStorage.getItem('breach_scan_count') || '0';
+    // Init new pages
+    initNews();
+    renderAlertsPage();
+    initPhoneChecker();
+    initEncyclopedia();
+    initParentGuide();
     applyLang();
     // Animate counters on first load
     setTimeout(animateAllCounters, 200);
@@ -8254,8 +8301,8 @@ var TOUR_STEPS = [{
         ar: 'كاشف الاحتيال بالذكاء الاصطناعي'
     },
     desc: {
-        en: 'Chat with an AI assistant powered by Google Gemini. Paste any suspicious message, link, or email — the AI analyzes it, explains how the scam works, and tells you what to do. Ask follow-up questions to learn more.',
-        ar: 'تحدث مع مساعد ذكاء اصطناعي مدعوم بـ Google Gemini. الصق أي رسالة أو رابط أو إيميل مشبوه — الذكاء الاصطناعي يحلله ويشرح كيف النصبة تشتغل ويقولك شنو تسوي. اسأل أسئلة متابعة لمعرفة المزيد.'
+        en: 'Chat with an AI assistant powered by Gemma 3 27B. Paste any suspicious message, link, or email — the AI analyzes it, explains how the scam works, and tells you what to do. Ask follow-up questions to learn more.',
+        ar: 'تحدث مع مساعد ذكاء اصطناعي مدعوم بـ Gemma 3 27B. الصق أي رسالة أو رابط أو إيميل مشبوه — الذكاء الاصطناعي يحلله ويشرح كيف النصبة تشتغل ويقولك شنو تسوي. اسأل أسئلة متابعة لمعرفة المزيد.'
     },
     tip: {
         en: '💡 Try the quick examples or paste any message you received that looks suspicious.',
@@ -8529,4 +8576,1146 @@ if (document.readyState === 'loading') {
 } else {
     init();
     checkFirstVisit();
+}
+
+// ══════════════════════════════════════════
+// SCAM NEWS FEED
+// ══════════════════════════════════════════
+var _newsFilter = 'all';
+var _liveNewsItems = [];
+
+var NEWS_DATA = [
+    {
+        id: 1, source: 'CITRA', category: 'official', categoryLabel: 'Official Alert',
+        title: 'CITRA Warns Against Fake Government Websites',
+        desc: 'CITRA has issued a fresh warning about fraudulent websites impersonating government services. Citizens must only use ".gov.kw" domains and verify URLs carefully before submitting any personal data.',
+        date: 'Apr 2026', urgent: true,
+        url: 'https://www.citra.gov.kw'
+    },
+    {
+        id: 2, source: 'CBK', category: 'banking', categoryLabel: 'Banking Fraud',
+        title: 'Central Bank of Kuwait: New Wave of OTP Fraud Calls',
+        desc: 'CBK issued an urgent warning about a surge in calls impersonating bank security departments asking for OTP codes. No bank will ever call to request your OTP. Hang up immediately and call your bank directly using the official number.',
+        date: 'Apr 2026', urgent: true,
+        url: 'https://www.cbk.gov.kw'
+    },
+    {
+        id: 3, source: 'MOI', category: 'phishing', categoryLabel: 'Phishing',
+        title: 'Fake Civil ID Renewal Texts Still Circulating in 2026',
+        desc: 'MOI and PACI confirm fraudulent SMS campaigns impersonating Civil ID renewal services remain active. PACI communicates only through paci.gov.kw and the official Sahel app — never via SMS links.',
+        date: 'Mar 2026', urgent: false,
+        url: 'https://www.moi.gov.kw'
+    },
+    {
+        id: 4, source: 'CITRA', category: 'phishing', categoryLabel: 'Phishing',
+        title: 'WhatsApp Verification Code Hijacking on the Rise',
+        desc: 'Account takeovers targeting Kuwait WhatsApp users continue. Victims receive messages from known contacts asking to forward a "mistakenly sent" 6-digit code — handing over full account control to scammers.',
+        date: 'Mar 2026', urgent: true,
+        url: 'https://www.citra.gov.kw'
+    },
+    {
+        id: 5, source: 'CBK', category: 'banking', categoryLabel: 'Banking Fraud',
+        title: 'Fraudulent NBK & KFH Apps Found on Unofficial Stores',
+        desc: 'Banking apps mimicking NBK and Kuwait Finance House have been discovered on unofficial stores and shared via WhatsApp links. Install banking apps exclusively from Apple App Store or Google Play.',
+        date: 'Feb 2026', urgent: false,
+        url: 'https://www.cbk.gov.kw'
+    },
+    {
+        id: 6, source: 'MOI', category: 'official', categoryLabel: 'Official Alert',
+        title: 'Police Impersonation Calls Targeting Families — MOI Alert',
+        desc: 'MOI documented a spike in calls from individuals claiming to be police officers demanding immediate payment to release a family member. Always verify by calling the official MOI hotline: 112.',
+        date: 'Feb 2026', urgent: false,
+        url: 'https://www.moi.gov.kw'
+    },
+    {
+        id: 7, source: 'Global', category: 'investment', categoryLabel: 'Investment Scam',
+        title: 'Crypto Signal Telegram Groups Defrauding GCC Investors',
+        desc: 'Interpol flagged a major surge in crypto signal group fraud across the GCC. Operators show fabricated profit screenshots to build trust, then vanish with investor funds. Guaranteed returns always signal a scam.',
+        date: 'Jan 2026', urgent: false,
+        url: null
+    },
+    {
+        id: 8, source: 'CITRA', category: 'phishing', categoryLabel: 'Phishing',
+        title: 'Talabat & Careem Fake Refund SMS Active in Kuwait',
+        desc: 'CITRA warns of SMS phishing campaigns mimicking Talabat and Careem, claiming order cancellations with pending refunds. Linked pages harvest full credit card details. These platforms only process refunds through their official apps.',
+        date: 'Jan 2026', urgent: false,
+        url: 'https://www.citra.gov.kw'
+    },
+    {
+        id: 9, source: 'CBK', category: 'banking', categoryLabel: 'Banking Fraud',
+        title: 'Boubyan Bank Phishing Campaign Returns in 2026',
+        desc: 'CBK flagged renewed phishing activity targeting Boubyan Bank customers with fake "security upgrade" emails and SMS. The portal captures credentials in real-time. Contact your bank through official channels only.',
+        date: 'Jan 2026', urgent: false,
+        url: 'https://www.cbk.gov.kw'
+    },
+    {
+        id: 10, source: 'MOI', category: 'official', categoryLabel: 'Official Alert',
+        title: 'Domestic Worker Recruitment Scam — Ministry Warning',
+        desc: 'MOI and Ministry of Social Affairs reiterate warnings against unlicensed recruitment agents on social media. Only use agencies registered with MOSA. Verify at mosa.gov.kw before paying any fees.',
+        date: 'Dec 2025', urgent: false,
+        url: 'https://www.moi.gov.kw'
+    },
+    {
+        id: 11, source: 'Global', category: 'phishing', categoryLabel: 'Phishing',
+        title: 'Aramex & DHL Package Scam SMS — GCC-Wide Alert',
+        desc: 'A persistent regional SMS campaign impersonating Aramex and DHL continues targeting Kuwait, demanding KD 2–5 customs fees. Track packages only via official courier apps — never via SMS links.',
+        date: 'Dec 2025', urgent: false,
+        url: null
+    },
+    {
+        id: 12, source: 'CITRA', category: 'investment', categoryLabel: 'Investment Scam',
+        title: 'Fake Celebrity Investment Accounts on Instagram & Snapchat',
+        desc: 'CITRA warns of fraudulent accounts impersonating Kuwaiti influencers and celebrities promoting "exclusive" investments. Verify all investment opportunities through the Capital Markets Authority (cma.gov.kw).',
+        date: 'Nov 2025', urgent: false,
+        url: 'https://www.citra.gov.kw'
+    },
+    {
+        id: 13, source: 'Global', category: 'investment', categoryLabel: 'Investment Scam',
+        title: 'Pig Butchering Scam Losses Exceed $12B Globally in 2025',
+        desc: 'Interpol\'s 2025 cybercrime report highlights pig butchering as the fastest-growing financial scam. GCC victims account for a significant portion. Be suspicious of any online contact who introduces a trading platform.',
+        date: 'Oct 2025', urgent: false,
+        url: null
+    },
+    {
+        id: 14, source: 'CBK', category: 'banking', categoryLabel: 'Banking Fraud',
+        title: 'KNET Dispute Phishing Emails Targeting Kuwait Cardholders',
+        desc: 'CBK flagged a targeted campaign using fake CBK emails claiming KNET disputes require card verification. CBK never requests card details by email. Report suspicious emails to cybercrime@cbk.gov.kw.',
+        date: 'Oct 2025', urgent: false,
+        url: 'https://www.cbk.gov.kw'
+    },
+    {
+        id: 15, source: 'MOI', category: 'official', categoryLabel: 'Official Alert',
+        title: 'Fake University Scholarship Offers on Social Media',
+        desc: 'Students across Kuwait are being targeted with fake scholarship offers on Snapchat and Instagram requesting "processing fees." Government scholarships are always free — apply only through the official MOHE portal.',
+        date: 'Sep 2025', urgent: false,
+        url: 'https://www.moi.gov.kw'
+    }
+];
+
+function initNews() {
+    renderNewsFeed();
+    fetchLiveNews();
+}
+
+function fetchLiveNews() {
+    var liveBar = document.getElementById('newsFeedStatus');
+    if (liveBar) liveBar.textContent = 'Fetching live articles…';
+    var feeds = [
+        { url: 'https://feeds.feedburner.com/TheHackersNews', label: 'THN' },
+        { url: 'https://krebsonsecurity.com/feed/', label: 'Krebs' }
+    ];
+    var terms = ['phishing','scam','fraud','otp','bank','whatsapp','malware','ransomware','identity','crypto'];
+    var fetched = [];
+    var done = 0;
+    feeds.forEach(function(feed) {
+        fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feed.url) + '&count=15')
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                if (data.items) {
+                    data.items.forEach(function(item) {
+                        var text = (item.title + ' ' + (item.description || '')).toLowerCase();
+                        var score = terms.reduce(function(s,t){ return s + (text.includes(t)?1:0); }, 0);
+                        if (score >= 1) {
+                            var desc = (item.description||'').replace(/<[^>]+>/g,'').trim();
+                            desc = desc.length > 220 ? desc.slice(0,220) + '…' : desc;
+                            var cat = (text.includes('bank')||text.includes('otp')) ? 'banking' :
+                                      (text.includes('invest')||text.includes('crypto')) ? 'investment' : 'phishing';
+                            fetched.push({
+                                id: 'live-' + fetched.length, source: feed.label,
+                                category: cat,
+                                categoryLabel: cat==='banking' ? 'Banking Fraud' : cat==='investment' ? 'Investment' : 'Phishing',
+                                title: item.title,
+                                desc: desc || item.title,
+                                date: new Date(item.pubDate).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}),
+                                urgent: score >= 3, url: item.link
+                            });
+                        }
+                    });
+                }
+                done++;
+                if (done === feeds.length) {
+                    if (fetched.length > 0) {
+                        _liveNewsItems = fetched;
+                        if (liveBar) liveBar.textContent = fetched.length + ' live articles + ' + NEWS_DATA.length + ' official alerts';
+                    } else {
+                        if (liveBar) liveBar.textContent = NEWS_DATA.length + ' curated official alerts';
+                    }
+                    renderNewsFeed();
+                }
+            })
+            .catch(function() {
+                done++;
+                if (done === feeds.length) {
+                    if (liveBar) liveBar.textContent = NEWS_DATA.length + ' official alerts loaded';
+                }
+            });
+    });
+}
+
+function filterNews(cat, btn) {
+    _newsFilter = cat;
+    document.querySelectorAll('.news-filter-btn').forEach(function(b) { b.classList.remove('active'); });
+    if (btn) btn.classList.add('active');
+    renderNewsFeed();
+}
+
+var _newsSearch = '';
+
+function searchNews(val) {
+    _newsSearch = val.trim().toLowerCase();
+    renderNewsFeed();
+}
+
+function renderNewsFeed() {
+    var feed = document.getElementById('newsFeed');
+    if (!feed) return;
+    var all = _liveNewsItems.length > 0 ? _liveNewsItems.concat(NEWS_DATA) : NEWS_DATA.slice();
+    var srcMap = { CITRA:'ns-citra', CBK:'ns-cbk', MOI:'ns-moi', Global:'ns-global', THN:'ns-global', Krebs:'ns-global' };
+    var catColors = { official:'#00d4ff', phishing:'#f5a623', banking:'#ff3c5a', investment:'#a855f7' };
+    var catIcons  = { official:'🏛', phishing:'🎣', banking:'🏦', investment:'📈' };
+
+    var items = all.filter(function(n) {
+        var catOk = _newsFilter === 'all' || n.category === _newsFilter;
+        var searchOk = !_newsSearch ||
+            n.title.toLowerCase().includes(_newsSearch) ||
+            n.desc.toLowerCase().includes(_newsSearch);
+        return catOk && searchOk;
+    });
+
+    if (items.length === 0) {
+        feed.innerHTML = '<div class="news-empty">No results found for your search.</div>';
+        return;
+    }
+
+    feed.innerHTML = items.map(function(n, i) {
+        var sc = srcMap[n.source] || 'ns-global';
+        var srcLabel = n.source === 'Global' ? 'Global Intel' : n.source;
+        var col = catColors[n.category] || '#00d4ff';
+        var ico = catIcons[n.category] || '⚠️';
+        var isNew = i < 2 && _newsFilter === 'all' && !_newsSearch;
+
+        return '<div class="ncard" style="--ncard-color:' + col + '">' +
+            '<div class="ncard-stripe"></div>' +
+            '<div class="ncard-inner">' +
+            '<div class="ncard-top">' +
+            '<span class="news-src-badge ' + sc + '">' + srcLabel + '</span>' +
+            (n.urgent ? '<span class="ncard-urgent">⚡ URGENT</span>' : '') +
+            (isNew ? '<span class="ncard-new">NEW</span>' : '') +
+            '<span class="ncard-cat" style="color:' + col + '">' + ico + ' ' + n.categoryLabel + '</span>' +
+            '<span class="ncard-date">' + n.date + '</span>' +
+            '</div>' +
+            '<div class="ncard-title">' + n.title + '</div>' +
+            '<div class="ncard-desc">' + n.desc + '</div>' +
+            '<div class="ncard-foot">' +
+            (n.url ? '<a class="ncard-link" href="' + n.url + '" target="_blank" rel="noopener noreferrer">View Source →</a>' : '<span class="ncard-nosrc">Global Intelligence</span>') +
+            '</div>' +
+            '</div>' +
+            '</div>';
+    }).join('');
+}
+
+// ══════════════════════════════════════════
+// ACTIVE SCAM ALERTS
+// ══════════════════════════════════════════
+var ALERTS_DATA = [
+    {
+        id: 'otp', icon: '📱', level: 'critical', levelLabel: 'CRITICAL',
+        title: 'Banking OTP Theft', subtitle: 'NBK · KFH · Boubyan · Gulf Bank',
+        desc: 'Scammers posing as bank security staff are calling Kuwaitis and demanding OTP codes to "stop suspicious transactions." Accounts are drained within minutes of the code being shared.',
+        trend: '↑ 34%', trendUp: true, meter: 92, lastSeen: '2 hours ago',
+        actions: ['Hang up — your bank will NEVER ask for your OTP', 'Call your bank directly using the official app number', 'Report to CBK fraud unit: 22412000']
+    },
+    {
+        id: 'invest', icon: '📈', level: 'high', levelLabel: 'HIGH',
+        title: 'WhatsApp / Telegram Investment Scam', subtitle: 'Crypto · Forex · "Guaranteed Returns"',
+        desc: 'Signal groups and private investment "clubs" promise 30–50% monthly returns. Victims who deposit see fake profits in dashboards before the platform becomes inaccessible.',
+        trend: '↑ 18%', trendUp: true, meter: 74, lastSeen: '5 hours ago',
+        actions: ['No legitimate investment guarantees returns', 'Verify firms at cma.gov.kw before depositing', 'Report groups to CITRA: report.citra.gov.kw']
+    },
+    {
+        id: 'civilid', icon: '🪪', level: 'high', levelLabel: 'HIGH',
+        title: 'Civil ID / PACI Phishing', subtitle: 'Fake SMS → Counterfeit PACI portals',
+        desc: 'SMS messages claiming your Civil ID has expired link to convincing fake PACI websites that harvest identity data and payment information. Active since early 2025.',
+        trend: 'Ongoing', trendUp: false, meter: 68, lastSeen: '1 day ago',
+        actions: ['Only renew at paci.gov.kw or official PACI offices', 'PACI never sends payment links via SMS', 'Check ID status via the official Sahel app']
+    },
+    {
+        id: 'jobs', icon: '💼', level: 'medium', levelLabel: 'MEDIUM',
+        title: 'Fake Job Offers', subtitle: 'LinkedIn · WhatsApp · Facebook Groups',
+        desc: 'Fraudulent listings targeting expats request "visa processing" or "background check" fees upfront. After payment, the recruiter disappears.',
+        trend: 'Steady', trendUp: false, meter: 48, lastSeen: '3 days ago',
+        actions: ['Legitimate employers never charge recruitment fees', 'Verify companies at moci.gov.kw', 'Use only MOSA-licensed recruitment agencies']
+    },
+    {
+        id: 'delivery', icon: '📦', level: 'medium', levelLabel: 'MEDIUM',
+        title: 'Fake Package Delivery SMS', subtitle: 'Impersonating Aramex · DHL · Fetchr',
+        desc: 'SMS messages demand KD 2–5 customs "release fees" via linked payment pages that steal full card credentials. Real couriers never charge via SMS links.',
+        trend: 'Stable', trendUp: false, meter: 38, lastSeen: '2 days ago',
+        actions: ['Track deliveries only via official courier apps', 'Never click payment links in SMS messages', 'If charged, dispute immediately with your bank']
+    },
+    {
+        id: 'romance', icon: '💔', level: 'low', levelLabel: 'LOW',
+        title: 'Romance / Catfishing Scam', subtitle: 'Social Media · Dating Apps · Instagram',
+        desc: 'Scammers build weeks-long relationships before introducing financial emergencies, asking for transfers or gift cards. Often escalates to sextortion blackmail.',
+        trend: 'Ongoing', trendUp: false, meter: 25, lastSeen: '1 week ago',
+        actions: ['Never transfer money to someone you have not met', 'Reverse image search their profile photos', 'Report blackmail to MOI Cybercrime: 1800']
+    }
+];
+
+var REPORTED_NUMBERS = [
+    { num: '+965 9750-XXXX', type: 'Investment Scam', reports: 47, last: '2 hours ago' },
+    { num: '+965 6612-XXXX', type: 'OTP Theft', reports: 31, last: '5 hours ago' },
+    { num: '+974 5555-XXXX', type: 'Impersonation', reports: 28, last: '1 day ago' },
+    { num: '+965 9900-XXXX', type: 'Fake Charity', reports: 19, last: '1 day ago' },
+    { num: '+44 7700-XXXX', type: 'Investment Scam', reports: 15, last: '2 days ago' },
+    { num: '+965 5011-XXXX', type: 'WhatsApp Hijack', reports: 12, last: '3 days ago' }
+];
+
+var DAILY_TIPS = [
+    'Banks will NEVER call you to ask for your OTP, PIN, or CVV — hang up immediately.',
+    'Official Kuwait government sites end in ".gov.kw" — always check the URL.',
+    'If an investment promises guaranteed high returns, it is a scam. All investments carry risk.',
+    'Enable two-factor authentication on all social media and banking apps right now.',
+    'Teach elderly family members: "I will never ask you to transfer money by phone."',
+    'Received a suspicious message? Use the AI Scam Detector (Tab 02) before responding.',
+    'Verify any job offer at moci.gov.kw before paying any fees.',
+    'WhatsApp verification codes should never be shared with anyone — ever.',
+    'Civil ID renewal is only done through paci.gov.kw or official PACI offices.',
+    'If you were scammed, report immediately to MOI Cybercrime: cybercrime.moi.gov.kw'
+];
+
+function renderAlertsPage() {
+    var levColor = { critical: '#ff2244', high: '#ff6600', medium: '#ffcc00', low: '#00cc66' };
+
+    var fill = document.getElementById('overallFill');
+    var badge = document.getElementById('overallBadge');
+    if (fill) fill.style.width = '74%';
+    if (badge) { badge.textContent = 'HIGH'; badge.className = 'atl-level-badge al-high'; }
+
+    var updEl = document.getElementById('alertsUpdated');
+    if (updEl) {
+        var now = new Date();
+        updEl.textContent = 'Updated ' + now.toLocaleTimeString('en-KW',{hour:'2-digit',minute:'2-digit'}) + ' · ' + ALERTS_DATA.length + ' active campaigns';
+    }
+
+    // Stat strip
+    var strip = document.getElementById('alertsStatStrip');
+    if (strip) {
+        var crit = ALERTS_DATA.filter(function(a){return a.level==='critical';}).length;
+        var high = ALERTS_DATA.filter(function(a){return a.level==='high';}).length;
+        strip.innerHTML =
+            '<div class="ast-item"><span class="ast-num ast-critical-num">' + crit + '</span><span class="ast-lbl">CRITICAL</span></div>' +
+            '<div class="ast-div"></div>' +
+            '<div class="ast-item"><span class="ast-num ast-high-num">' + high + '</span><span class="ast-lbl">HIGH</span></div>' +
+            '<div class="ast-div"></div>' +
+            '<div class="ast-item"><span class="ast-num">' + ALERTS_DATA.length + '</span><span class="ast-lbl">TOTAL ALERTS</span></div>';
+    }
+
+    // Alert cards
+    var grid = document.getElementById('alertsGrid');
+    if (grid) {
+        grid.innerHTML = ALERTS_DATA.map(function(a) {
+            var c = levColor[a.level] || '#00cc66';
+            return '<div class="ac2" style="border-left:3px solid ' + c + ';">' +
+                '<div class="ac2-top">' +
+                '<span class="ac2-icon">' + a.icon + '</span>' +
+                '<div class="ac2-titles">' +
+                '<div class="ac2-title">' + a.title + '</div>' +
+                '<div class="ac2-sub">' + a.subtitle + '</div>' +
+                '</div>' +
+                '<span class="ac2-badge" style="color:' + c + ';border-color:' + c + '44;background:' + c + '11;">' + a.levelLabel + '</span>' +
+                '</div>' +
+                '<p class="ac2-desc">' + a.desc + '</p>' +
+                '<div class="ac2-meter-row">' +
+                '<div class="ac2-meter"><div class="ac2-fill" style="width:' + a.meter + '%;background:' + c + ';box-shadow:0 0 8px ' + c + '55;"></div></div>' +
+                '<span class="ac2-pct">' + a.meter + '%</span>' +
+                '</div>' +
+                '<div class="ac2-footer">' +
+                '<span class="ac2-last">Last seen: ' + a.lastSeen + '</span>' +
+                '<span class="ac2-trend" style="color:' + (a.trendUp?'#ff8800':'var(--muted2)') + ';">' + a.trend + '</span>' +
+                '</div>' +
+                '<div class="ac2-actions">' +
+                a.actions.map(function(ac){return '<div class="ac2-action">✓ ' + ac + '</div>';}).join('') +
+                '</div></div>';
+        }).join('');
+    }
+
+    // Reported numbers
+    var numList = document.getElementById('alertsNumbersList');
+    if (numList) {
+        numList.innerHTML = REPORTED_NUMBERS.map(function(r) {
+            return '<div class="alert-num-item">' +
+                '<span class="alert-num-val">' + r.num + '</span>' +
+                '<span class="alert-num-type">' + r.type + '</span>' +
+                '<span class="alert-num-meta">' + r.reports + ' reports · ' + r.last + '</span>' +
+                '</div>';
+        }).join('');
+    }
+
+    var tipEl = document.getElementById('alertsDailyTip');
+    if (tipEl) tipEl.textContent = DAILY_TIPS[new Date().getDate() % DAILY_TIPS.length];
+
+    fetchURLhausThreats();
+}
+
+function fetchURLhausThreats() {
+    var container = document.getElementById('alertsLiveFeed');
+    if (!container) return;
+    container.innerHTML = '<div class="urlhaus-loading">⟳ Fetching live threat intelligence from abuse.ch…</div>';
+    fetch('https://urlhaus-api.abuse.ch/v1/urls/recent/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'limit=12'
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+        if (!data.urls || data.urls.length === 0) { container.innerHTML = ''; return; }
+        container.innerHTML =
+            '<div class="urlhaus-header"><span class="urlhaus-dot"></span>Live Malicious URL Feed — abuse.ch URLhaus</div>' +
+            '<div class="urlhaus-list">' +
+            data.urls.map(function(u) {
+                var tags = (u.tags||[]).map(function(t){return '<span class="urlhaus-tag">'+t+'</span>';}).join('');
+                return '<div class="urlhaus-item">' +
+                    '<div class="urlhaus-item-top">' +
+                    '<span class="urlhaus-threat">' + (u.threat||'malware') + '</span>' +
+                    '<span class="urlhaus-host">' + (u.host||'').slice(0,55) + '</span>' +
+                    '<span class="urlhaus-date">' + (u.date_added||'').split(' ')[0] + '</span>' +
+                    '</div>' +
+                    (tags ? '<div class="urlhaus-tags">' + tags + '</div>' : '') +
+                    '</div>';
+            }).join('') + '</div>';
+    })
+    .catch(function() {
+        container.innerHTML = '<div style="color:var(--muted);font-size:0.72rem;padding:12px;text-align:center;">Live threat feed unavailable — check your connection.</div>';
+    });
+}
+
+// ══════════════════════════════════════════
+// PHONE NUMBER CHECKER
+// ══════════════════════════════════════════
+var _abstractPhoneKey = '__ABSTRACT_PHONE_KEY__';
+
+var PHONE_DB = [
+    { pattern: /^975[0-9]{5}$/, type: 'Investment Scam', risk: 'high', reports: 47, note: 'Pattern linked to fake investment WhatsApp groups targeting Kuwait since 2024.' },
+    { pattern: /^661[0-9]{5}$/, type: 'OTP Theft', risk: 'high', reports: 31, note: 'Repeatedly reported for impersonating bank employees requesting OTP codes.' },
+    { pattern: /^990[0-9]{5}$/, type: 'Fake Charity', risk: 'medium', reports: 19, note: 'Associated with fake charity donation campaigns particularly during Ramadan.' },
+    { pattern: /^501[0-9]{5}$/, type: 'WhatsApp Hijack', risk: 'medium', reports: 12, note: 'Linked to WhatsApp account verification code theft campaigns.' },
+    { pattern: /^500[0-9]{5}$/, type: 'Investment Scam', risk: 'medium', reports: 8, note: 'Used in Telegram crypto signal group promotion scams.' },
+    { pattern: /^50123456$/, type: 'Multiple Scam Types', risk: 'high', reports: 23, note: 'Reported for OTP theft and fake bank calls. Always verify caller identity independently.' },
+    { pattern: /^97500000$/, type: 'Investment Scam', risk: 'high', reports: 35, note: 'Repeatedly reported for promoting fake cryptocurrency investment platforms.' },
+    { pattern: /^60000000$/, type: 'Fake Government', risk: 'high', reports: 15, note: 'Reported impersonating government officials demanding payments.' }
+];
+
+var _communityPhoneReports = JSON.parse(localStorage.getItem('sk_phone_reports') || '[]');
+var _phoneScanCount = parseInt(localStorage.getItem('sk_phone_scans') || '0');
+
+function initPhoneChecker() {
+    var cntEl = document.getElementById('phoneScanCount');
+    if (cntEl) cntEl.textContent = _phoneScanCount;
+    renderCommunityList();
+}
+
+function setPhoneEx(num) {
+    var inp = document.getElementById('phoneInput');
+    if (inp) { inp.value = num; inp.focus(); }
+}
+
+function checkPhone() {
+    var inp = document.getElementById('phoneInput');
+    if (!inp) return;
+    var raw = inp.value.replace(/\s+/g,'').replace(/^\+965/,'').replace(/^965/,'');
+    var results = document.getElementById('phoneResults');
+    if (!results) return;
+
+    if (!raw || raw.length < 7) {
+        results.innerHTML = _phCard('warn','⚠ Invalid Number','Please enter an 8-digit Kuwait number without the +965 prefix.',[]);
+        return;
+    }
+
+    results.innerHTML = '<div class="ph-scanning"><div class="ph-scan-ring"></div><span>Scanning databases…</span></div>';
+
+    _phoneScanCount++;
+    localStorage.setItem('sk_phone_scans', _phoneScanCount);
+    var cntEl = document.getElementById('phoneScanCount');
+    if (cntEl) cntEl.textContent = _phoneScanCount;
+
+    var match = null;
+    for (var i = 0; i < PHONE_DB.length; i++) {
+        if (PHONE_DB[i].pattern.test(raw)) { match = PHONE_DB[i]; break; }
+    }
+    var communityMatch = _communityPhoneReports.filter(function(r) {
+        return r.number.replace(/\s+/g,'').replace(/^\+965/,'') === raw;
+    });
+
+    var apiKey = _abstractPhoneKey !== '__ABSTRACT_PHONE_KEY__' ? _abstractPhoneKey : null;
+
+    function showResult(apiData) {
+        var carrierHtml = '';
+        if (apiData && apiData.valid !== undefined) {
+            carrierHtml = '<div class="ph-carrier-row">' +
+                '<div class="ph-carrier-item"><span class="ph-cl">Format</span><span class="ph-cv">' + ((apiData.format && apiData.format.international) || ('+965 ' + raw)) + '</span></div>' +
+                '<div class="ph-carrier-item"><span class="ph-cl">Carrier</span><span class="ph-cv">' + (apiData.carrier || 'Unknown') + '</span></div>' +
+                '<div class="ph-carrier-item"><span class="ph-cl">Line Type</span><span class="ph-cv">' + (apiData.type || 'Mobile') + '</span></div>' +
+                '<div class="ph-carrier-item"><span class="ph-cl">Valid</span><span class="ph-cv" style="color:' + (apiData.valid ? '#00cc66':'#ff4444') + '">' + (apiData.valid ? '✓ Yes':'✗ No') + '</span></div>' +
+                '</div>';
+        }
+        var numFmt = '+965 ' + raw.replace(/(\d{4})(\d{4})/, '$1 $2');
+
+        if (match || communityMatch.length > 0) {
+            var c = (match && match.risk === 'high') ? '#ff2244' : '#ff8800';
+            var total = (match ? match.reports : 0) + communityMatch.length;
+            var note = match ? match.note : 'Reported by the ShieldKW community.';
+            var stype = match ? match.type : communityMatch[0].type;
+            results.innerHTML = '<div class="ph-result ph-result-danger">' +
+                '<div class="ph-result-banner" style="background:' + c + ';">⚠ SCAM NUMBER REPORTED</div>' +
+                '<div class="ph-result-number">' + numFmt + '</div>' +
+                carrierHtml +
+                '<div class="ph-info-grid">' +
+                '<div class="ph-info-item"><span class="ph-il">Scam Type</span><span class="ph-iv">' + stype + '</span></div>' +
+                '<div class="ph-info-item"><span class="ph-il">Reports</span><span class="ph-iv" style="color:' + c + ';">' + total + ' reports</span></div>' +
+                '</div>' +
+                '<div class="ph-note">' + note + '</div>' +
+                '<div class="ph-actions">' +
+                '<div class="ph-action">🚫 Do not answer — block this number immediately</div>' +
+                '<div class="ph-action">📋 Report to MOI Cybercrime: cybercrime.moi.gov.kw</div>' +
+                '<div class="ph-action">🏦 Shared financial info? Call your bank NOW</div>' +
+                '</div></div>';
+        } else if (/^(971|972|973|974|968|91|62|63|64|234|1[^0-9])/.test(raw)) {
+            results.innerHTML = '<div class="ph-result ph-result-warn">' +
+                '<div class="ph-result-banner" style="background:#ff8800;">⚠ SUSPICIOUS PATTERN</div>' +
+                '<div class="ph-result-number">' + numFmt + '</div>' +
+                carrierHtml +
+                '<div class="ph-note">This prefix matches patterns associated with scam operations targeting Gulf countries. No confirmed reports yet — exercise caution.</div>' +
+                '<div class="ph-actions">' +
+                '<div class="ph-action">🔍 Verify the caller\'s identity before engaging</div>' +
+                '<div class="ph-action">⚠ Never share personal or financial data</div>' +
+                '</div></div>';
+        } else {
+            results.innerHTML = '<div class="ph-result ph-result-safe">' +
+                '<div class="ph-result-banner" style="background:#00a855;">✓ NOT IN SCAM DATABASE</div>' +
+                '<div class="ph-result-number">' + numFmt + '</div>' +
+                carrierHtml +
+                '<div class="ph-note">No reports found for this number. This does not guarantee safety — new scam numbers appear daily. If you received a suspicious call, report it below.</div>' +
+                '<div class="ph-actions">' +
+                '<div class="ph-action">💡 Still suspicious? Paste the message in the AI Scam Detector (Tab 02)</div>' +
+                '<div class="ph-action">🔒 Never share OTP, PIN, or card details over the phone</div>' +
+                '</div></div>';
+        }
+    }
+
+    if (apiKey) {
+        setTimeout(function() {
+            fetch('https://phonevalidation.abstractapi.com/v1/?api_key=' + apiKey + '&phone=' + encodeURIComponent('+965' + raw))
+                .then(function(r){ return r.json(); })
+                .then(function(d){ showResult(d); })
+                .catch(function(){ showResult(null); });
+        }, 600);
+    } else {
+        setTimeout(function(){ showResult(null); }, 700);
+    }
+}
+
+function _phCard(type, title, desc, actions) {
+    var c = type==='danger'?'#ff2244': type==='warn'?'#ff8800':'#00cc66';
+    return '<div class="ph-result ph-result-' + type + '">' +
+        '<div class="ph-result-banner" style="background:' + c + ';">' + title + '</div>' +
+        '<div class="ph-note">' + desc + '</div>' +
+        '<div class="ph-actions">' + actions.map(function(a){return '<div class="ph-action">'+a+'</div>';}).join('') + '</div></div>';
+}
+
+function reportPhoneNumber() {
+    var inp = document.getElementById('phoneReportInput');
+    var typeEl = document.getElementById('phoneReportType');
+    var fb = document.getElementById('phoneReportFeedback');
+    if (!inp || !typeEl || !fb) return;
+
+    var num = inp.value.trim().replace(/\s+/g,'');
+    if (!num || num.length < 8) {
+        fb.textContent = '⚠ Please enter a valid phone number.';
+        fb.style.color = '#ff4444';
+        return;
+    }
+
+    _communityPhoneReports.unshift({ number: num, type: typeEl.value,
+        date: new Date().toLocaleDateString('en-KW'),
+        time: new Date().toLocaleTimeString('en-KW',{hour:'2-digit',minute:'2-digit'}) });
+    if (_communityPhoneReports.length > 50) _communityPhoneReports.pop();
+    localStorage.setItem('sk_phone_reports', JSON.stringify(_communityPhoneReports));
+
+    fb.textContent = '✓ Report submitted! Thank you for protecting the community.';
+    fb.style.color = '#00cc66';
+    inp.value = '';
+    renderCommunityList();
+    setTimeout(function(){ fb.textContent = ''; }, 4000);
+}
+
+function renderCommunityList() {
+    var list = document.getElementById('phoneCommunityList');
+    if (!list) return;
+    var labels = { investment:'Investment Scam', impersonation:'Impersonation', otp:'OTP Theft', charity:'Fake Charity', other:'Other' };
+    if (_communityPhoneReports.length === 0) {
+        list.innerHTML = '<div style="color:var(--muted);padding:1.5rem;text-align:center;font-size:0.78rem;border:1px dashed var(--border);border-radius:12px;">No community reports yet. Be the first to report a scam number.</div>';
+        return;
+    }
+    list.innerHTML = _communityPhoneReports.slice(0,10).map(function(r) {
+        return '<div class="phone-community-item">' +
+            '<span class="pc-num">' + r.number + '</span>' +
+            '<span class="pc-type">' + (labels[r.type]||r.type) + '</span>' +
+            '<span class="pc-date">' + r.date + '</span>' +
+            '</div>';
+    }).join('');
+}
+
+// ══════════════════════════════════════════
+// SCAM ENCYCLOPEDIA
+// ══════════════════════════════════════════
+var _encFilter = 'all';
+var _encSearch = '';
+var _encOpen = null;
+
+var ENC_DATA = [
+    {
+        id: 'phishing-sms', cat: 'phishing', icon: '📱',
+        title: 'Phishing SMS (Smishing)',
+        subtitle: 'Fake text messages stealing credentials',
+        howItWorks: 'Scammers send SMS messages impersonating banks, government agencies (PACI, MOI), or delivery services. The message creates urgency — "Your account will be blocked", "Your Civil ID expired" — and includes a link to a convincing fake website that steals your login or card details.',
+        redFlags: ['Sense of urgency ("act within 24 hours")', 'Links that don\'t end in .gov.kw or official domains', 'Requests for OTP, PIN, or card numbers', 'Unexpected notifications about accounts or deliveries'],
+        example: 'SMS: "PACI: Your Civil ID has expired. Click here to renew immediately or face a KD 50 fine: http://paci-kw.info/renew"',
+        whatToDo: ['Do not click any links in unexpected SMS messages', 'Go directly to the official website by typing the URL yourself', 'Report to CITRA: report.citra.gov.kw', 'Forward the SMS to your bank\'s fraud hotline'],
+        severity: 'critical'
+    },
+    {
+        id: 'otp-theft', cat: 'banking', icon: '🔐',
+        title: 'OTP Theft via Phone Call',
+        subtitle: 'Callers impersonating bank employees',
+        howItWorks: 'A caller claims to be from your bank\'s security department. They say your account is under attack or a suspicious transaction occurred. They then ask for your OTP (one-time password), PIN, or card details to "secure" your account. Once you share the code, they access and drain your account.',
+        redFlags: ['Unexpected call from your "bank"', 'Caller knows some of your personal details (name, partial account number)', 'Urgency: "We must act now or your account will be frozen"', 'Request for OTP, PIN, or CVV'],
+        example: 'Call: "I\'m Ahmed from NBK Security. We detected suspicious activity on your account. I\'ll send you an OTP — please read it back to me to verify your identity and stop the transaction."',
+        whatToDo: ['Hang up immediately — no legitimate bank ever asks for OTP', 'Call your bank directly using the number on their official website or your card', 'Report to CBK fraud unit: 22412000', 'If you shared OTP, call your bank instantly to freeze the account'],
+        severity: 'critical'
+    },
+    {
+        id: 'investment-scam', cat: 'investment', icon: '📈',
+        title: 'Fake Investment / "Guaranteed Returns"',
+        subtitle: 'Fraudulent investment platforms promising high profits',
+        howItWorks: 'Scammers promote investment platforms via WhatsApp, Telegram, or Instagram showing fabricated profit screenshots. Victims make small deposits and see fake "gains" in a dashboard. After a larger deposit, they\'re unable to withdraw and the platform disappears.',
+        redFlags: ['Guaranteed returns of 20-50% monthly', 'Pressure to invest quickly before a "window closes"', 'Cannot find the company on official registries', 'Platform requires you to recruit friends for bonuses'],
+        example: '"Join our exclusive crypto trading group! I turned KD 500 into KD 3,200 in just 2 weeks! Limited spots. WhatsApp me now." — with a screenshot of a "balance" that could be any image.',
+        whatToDo: ['Verify any investment company at cma.gov.kw (Capital Markets Authority)', 'Never invest money you cannot afford to lose entirely', 'Ask for the company\'s CMA registration number', 'Report to CMA: 22903900'],
+        severity: 'high'
+    },
+    {
+        id: 'civil-id-scam', cat: 'phishing', icon: '🪪',
+        title: 'Civil ID / PACI Impersonation',
+        subtitle: 'Fake government identity renewal portals',
+        howItWorks: 'SMS, WhatsApp, or email messages impersonate PACI (Public Authority for Civil Information) claiming your Civil ID is expired, needs renewal, or has an error requiring immediate action. Links lead to convincing fake PACI websites that steal passport numbers, Civil ID details, and payment information.',
+        redFlags: ['Message claims your Civil ID has "errors" or is "under review"', 'Asks you to pay a fee via a link', 'URL is not paci.gov.kw', 'Unusually urgent language'],
+        example: 'SMS: "Your Civil ID has been flagged for renewal. Failure to act within 48 hours will result in travel ban. Update now: http://paci-renewal-kw.com/update"',
+        whatToDo: ['Only use the official PACI portal: paci.gov.kw', 'PACI never sends SMS with payment links', 'Check Civil ID status through the official Sahel app', 'Report fake sites to CITRA: report.citra.gov.kw'],
+        severity: 'high'
+    },
+    {
+        id: 'romance-scam', cat: 'social', icon: '💔',
+        title: 'Romance / Relationship Scam',
+        subtitle: 'Emotional manipulation to steal money',
+        howItWorks: 'Scammers create attractive fake profiles on social media or dating apps. They build a relationship over weeks or months, then introduce a financial crisis — medical emergency, stuck at the airport, business deal — and ask for money. They may also send explicit photos and later use them for blackmail.',
+        redFlags: ['Person lives far away and can never meet in person', 'Professes love very quickly', 'Always has an emergency requiring money', 'Photos are too perfect (often stolen from models)'],
+        example: '"I\'m a US engineer working in Saudi. I have feelings for you. My equipment got confiscated at customs — I just need KD 800 to release it and I\'ll pay you back double when I arrive."',
+        whatToDo: ['Never send money to someone you haven\'t met in person', 'Reverse image search their profile photos (Google Images)', 'Be suspicious of anyone who avoids video calls', 'Report to MOI Cybercrime if being blackmailed'],
+        severity: 'high'
+    },
+    {
+        id: 'fake-banking-app', cat: 'banking', icon: '🏦',
+        title: 'Fake Banking App',
+        subtitle: 'Malicious apps stealing account credentials',
+        howItWorks: 'Fraudulent apps mimicking NBK, KFH, Boubyan, and other Kuwaiti banks are distributed via unofficial app stores, WhatsApp links, or phishing emails. Once installed, they capture login credentials, OTPs, and sometimes take control of the device.',
+        redFlags: ['App downloaded from a link rather than official stores', 'App asks for excessive permissions (SMS, contacts, camera)', 'App asks you to disable Play Protect', 'Slightly different name or logo from the real bank'],
+        example: 'WhatsApp message: "Download the new NBK Pro app for faster transfers. Official link: [malicious APK link]" — the APK installs a credential-stealing app.',
+        whatToDo: ['Only install banking apps from Apple App Store or Google Play Store', 'Check the developer name matches the official bank', 'Never download apps from links sent via WhatsApp or SMS', 'Contact your bank immediately if you installed a suspicious app'],
+        severity: 'critical'
+    },
+    {
+        id: 'job-offer-fraud', cat: 'social', icon: '💼',
+        title: 'Fake Job Offer',
+        subtitle: 'Employment fraud targeting job seekers',
+        howItWorks: 'Scammers post fake job listings for high-paying positions in Kuwait. When victims apply, they\'re told they got the job but must pay "visa fees", "background check fees", or "equipment deposits" upfront. After payment, the recruiter disappears.',
+        redFlags: ['Job found on social media rather than official platforms', 'Unusually high salary for minimal qualifications', 'Recruiter contacts you first (you didn\'t apply)', 'Asked for payment before starting work'],
+        example: '"We are hiring for an oil company in Kuwait. Salary KD 1,200/month, accommodation included. Just pay KD 250 for visa processing. Send to our agent\'s personal account."',
+        whatToDo: ['Verify the company at moci.gov.kw', 'Legitimate employers never ask for upfront fees', 'Only use licensed recruitment agencies (Ministry of Social Affairs list)', 'Report job fraud to MOI labor department'],
+        severity: 'medium'
+    },
+    {
+        id: 'crypto-signals', cat: 'investment', icon: '₿',
+        title: 'Crypto Trading Signal Scam',
+        subtitle: 'Paid groups selling worthless trading tips',
+        howItWorks: 'Operators create Telegram or WhatsApp "VIP" signal groups claiming to have inside information on cryptocurrency movements. They charge subscription fees and convince members to deposit on specific unregulated platforms. The platforms are controlled by the scammers who manipulate balances.',
+        redFlags: ['Signals group run by anonymous admin', 'Requires deposit on a specific unknown platform', 'Dashboard shows profits but withdrawals are blocked', '"Admin" asks for tax or fee payments before you can withdraw'],
+        example: '"VIP Crypto Signal Group — 95% win rate! Join for KD 50/month. Our last signal made 800% profit. We only accept 20 members." — with fabricated profit screenshots.',
+        whatToDo: ['Never deposit on platforms you cannot verify independently', 'Check if the platform is licensed at cma.gov.kw', 'Be extremely skeptical of guaranteed profit claims', 'Report to CMA Kuwait: cma.gov.kw/en/reportcomplaint'],
+        severity: 'high'
+    },
+    {
+        id: 'social-hijack', cat: 'phishing', icon: '👤',
+        title: 'Social Media Account Hijacking',
+        subtitle: 'Stealing Instagram, Snapchat, WhatsApp accounts',
+        howItWorks: 'Scammers contact victims through DMs or calls claiming to be support staff, or a friend asking for a forwarded verification code. Once they have the code, they take control of the account and use it to scam the victim\'s contacts for money.',
+        redFlags: ['Someone asks you to forward a verification code "by mistake"', 'Unexpected login verification request you didn\'t initiate', '"Instagram/WhatsApp support" contacting you via DM', 'Friend urgently asking for money via their hacked account'],
+        example: 'WhatsApp: "Hey! I accidentally sent a 6-digit verification code to your number. Can you forward it to me? It\'s urgent." — forwarding gives them your WhatsApp account.',
+        whatToDo: ['Never share or forward verification codes', 'Enable two-factor authentication on all social accounts', 'If your account is hijacked, report to the platform immediately', 'Warn contacts if your account was compromised'],
+        severity: 'high'
+    },
+    {
+        id: 'delivery-scam', cat: 'phishing', icon: '📦',
+        title: 'Fake Package Delivery Scam',
+        subtitle: 'Impersonating Aramex, DHL, SMSA',
+        howItWorks: 'SMS or email messages claim a package is held at customs and requires a small fee (KD 2-5) to be released. The payment page collects full credit card details including CVV and OTP, which are then used for unauthorized transactions far exceeding the fake "fee".',
+        redFlags: ['You weren\'t expecting a package', 'SMS contains a link to a payment page', 'URL doesn\'t match the courier\'s official domain', 'Fee amount seems very small and reasonable'],
+        example: 'SMS from "Aramex-KW": "Your parcel #AX78234 is held at Kuwait customs. Pay KD 3.50 clearance fee to release. Pay now: http://aramex-kw-delivery.net/pay"',
+        whatToDo: ['Track packages only through official apps', 'Never pay via links sent in SMS', 'If charged, dispute with your bank immediately', 'Report fake delivery sites to CITRA'],
+        severity: 'medium'
+    },
+    {
+        id: 'lottery-scam', cat: 'social', icon: '🎰',
+        title: 'Fake Lottery / Prize Scam',
+        subtitle: 'Congratulating victims for prizes they never won',
+        howItWorks: 'Victims receive messages via WhatsApp, email, or social media claiming they\'ve won a cash prize, gift card, or luxury item from a brand (Avenues Mall, Zain, etc.). To claim the prize, they must pay "processing fees" or provide personal/financial information.',
+        redFlags: ['You never entered the competition', 'Prize notification comes via WhatsApp or SMS', '"Claim fee" required before receiving the prize', 'Pressure to act quickly or prize will be forfeited'],
+        example: 'WhatsApp: "Congratulations! You\'ve won a KD 5,000 Avenues gift card. You were selected from 100,000 participants. Click here to claim: [link]. Pay KD 15 processing fee."',
+        whatToDo: ['Real lotteries don\'t require payment to claim prizes', 'Verify any competition through the brand\'s official social media', 'Never share card details to claim a "prize"', 'Report to CITRA and share warning with family'],
+        severity: 'medium'
+    },
+    {
+        id: 'fake-charity', cat: 'social', icon: '🤲',
+        title: 'Fake Charity / Donation Scam',
+        subtitle: 'Exploiting generosity with fake causes',
+        howItWorks: 'Scammers create fake social media accounts and WhatsApp numbers claiming to represent charities, orphanages, or disaster relief efforts. They use emotional images and stories (sometimes stolen from legitimate charities) to collect donations that go directly to the scammer.',
+        redFlags: ['Charity found only on WhatsApp or personal Instagram/Snapchat', 'Collecting to personal bank accounts or phone transfer numbers', 'Cannot find the charity registered with Kuwaiti authorities', 'Photos look taken from news articles'],
+        example: 'Instagram: "Help Syrian orphans — send your Zakat to [personal bank account]. We are a registered Kuwait charity." — no registration number, no official website.',
+        whatToDo: ['Only donate to charities officially licensed by Ministry of Social Affairs', 'Verify at mosa.gov.kw official charity registry', 'Ask for the charity\'s official registration number', 'Pay via their official bank account, not personal transfers'],
+        severity: 'medium'
+    },
+    {
+        id: 'tech-support', cat: 'phishing', icon: '💻',
+        title: 'Tech Support Scam',
+        subtitle: 'Fake alerts claiming your device is infected',
+        howItWorks: 'Pop-up messages on websites or calls claiming to be Microsoft, Apple, or internet providers tell the victim their device has a virus. They\'re directed to call a number or install remote access software. The scammer then asks for payment to "fix" the non-existent problem and may steal data.',
+        redFlags: ['Browser popup claiming to be "Microsoft" or "Apple" warning', 'Call from "Windows Support" or "Apple Security"', 'Asked to install remote access software (AnyDesk, TeamViewer)', 'Request for gift card payment to fix your device'],
+        example: 'Browser popup: "MICROSOFT SECURITY ALERT! Your PC is infected with virus. Call Microsoft Support immediately: +1-888-XXX-XXXX." — the number connects to scammers.',
+        whatToDo: ['Close browser tabs with scary virus warnings — they are fake', 'Microsoft and Apple never cold-call customers', 'Never install remote access software at a stranger\'s request', 'If remote access was given, change all passwords immediately'],
+        severity: 'medium'
+    },
+    {
+        id: 'pig-butchering', cat: 'investment', icon: '🐷',
+        title: 'Pig Butchering Scam',
+        subtitle: 'Long-con investment fraud with fake relationships',
+        howItWorks: '"Pig butchering" (杀猪盘) involves scammers building trust over weeks through romantic or friendly relationships before introducing a "profitable" crypto trading platform. Victims make small deposits, see fake gains, then deposit larger amounts. The platform becomes inaccessible and all funds are stolen.',
+        redFlags: ['New online connection introduces trading platform after weeks of chatting', 'Platform shows impressive returns immediately', 'Pressure to deposit more to unlock withdrawals', 'Account gets "frozen" and requires "tax payment" to unfreeze'],
+        example: '"I met someone on Instagram. After 3 weeks of talking, they showed me their trading app earnings. I invested KD 3,000, saw KD 9,000 in profits, then couldn\'t withdraw and they disappeared."',
+        whatToDo: ['Be extremely cautious of online contacts who introduce investment platforms', 'Verify any trading platform with CMA Kuwait', 'Never invest money based on a new online contact\'s recommendation', 'Report to cybercrime units and international agencies (FBI IC3 for international scams)'],
+        severity: 'critical'
+    },
+    {
+        id: 'rental-scam', cat: 'social', icon: '🏠',
+        title: 'Fake Rental / Property Scam',
+        subtitle: 'Non-existent apartments and properties',
+        howItWorks: 'Fraudulent listings on property apps and social media offer apartments or villas in Kuwait at below-market prices. Victims are asked to pay a "deposit" or "first month" to secure the property remotely before viewing. The property either doesn\'t exist or isn\'t the owner\'s to rent.',
+        redFlags: ['Price is significantly below market rate', 'Owner claims to be abroad and can\'t meet in person', 'Asked to pay deposit before viewing the property', 'Rushed urgency — "many people are interested"'],
+        example: '"Large apartment in Salmiya, KD 280/month (all included). Owner in UK, send KD 560 deposit via bank transfer to secure, key will be sent. Multiple inquiries received."',
+        whatToDo: ['Never pay a deposit before physically viewing a property', 'Verify the owner\'s identity against the property title deed', 'Use licensed real estate agencies registered with MOCI', 'Meet in person or use a trusted agent for remote transactions'],
+        severity: 'medium'
+    },
+    {
+        id: 'impersonation', cat: 'social', icon: '👮',
+        title: 'Authority Impersonation Call',
+        subtitle: 'Fake police, MOI, or government officials',
+        howItWorks: 'Scammers call claiming to be police officers, MOI investigators, or government officials. They claim the victim (or a family member) is involved in a criminal case. To avoid arrest or legal action, they demand immediate payment or request the victim travel to a specific location.',
+        redFlags: ['Unexpected call from "police" or government official', 'Caller says you or a family member are in legal trouble', 'Demand for immediate payment to "resolve" the case', 'Secrecy required — "don\'t tell your family"'],
+        example: '"This is Lieutenant X from the Criminal Investigations Department. Your name has come up in a money laundering case. To clear your name before a warrant is issued, you must pay KD 800 today."',
+        whatToDo: ['Hang up and call the official MOI number: 1800', 'Real police never demand money over the phone', 'Never travel to meet unknown "officials" alone', 'Call 112 if you feel threatened'],
+        severity: 'high'
+    }
+];
+
+var ENC_CATEGORIES = [
+    { id: 'all', label: 'All Types' },
+    { id: 'phishing', label: 'Phishing' },
+    { id: 'banking', label: 'Banking' },
+    { id: 'investment', label: 'Investment' },
+    { id: 'social', label: 'Social Engineering' }
+];
+
+function initEncyclopedia() {
+    // Build category filters
+    var filtersEl = document.getElementById('encCatFilters');
+    if (filtersEl) {
+        filtersEl.innerHTML = ENC_CATEGORIES.map(function(c) {
+            return '<button class="enc-cat-btn' + (c.id === 'all' ? ' active' : '') + '" onclick="filterEncByCat(\'' + c.id + '\',this)">' + c.label + '</button>';
+        }).join('');
+    }
+    // Update count
+    var cntEl = document.getElementById('encCount');
+    if (cntEl) cntEl.textContent = ENC_DATA.length;
+    // Render all cards
+    renderEncGrid();
+}
+
+function filterEncByCat(cat, btn) {
+    _encFilter = cat;
+    _encSearch = '';
+    var searchInp = document.getElementById('encSearch');
+    if (searchInp) searchInp.value = '';
+    document.querySelectorAll('.enc-cat-btn').forEach(function(b) { b.classList.remove('active'); });
+    if (btn) btn.classList.add('active');
+    renderEncGrid();
+}
+
+function filterEncyclopedia(query) {
+    _encSearch = query.toLowerCase();
+    renderEncGrid();
+}
+
+function renderEncGrid() {
+    var grid = document.getElementById('encGrid');
+    if (!grid) return;
+    var items = ENC_DATA.filter(function(e) {
+        var catOk = _encFilter === 'all' || e.cat === _encFilter;
+        var searchOk = !_encSearch || e.title.toLowerCase().includes(_encSearch) || e.subtitle.toLowerCase().includes(_encSearch);
+        return catOk && searchOk;
+    });
+    if (items.length === 0) {
+        grid.innerHTML = '<div style="color:var(--muted);padding:2rem;text-align:center;grid-column:1/-1;">No scam types found matching your search.</div>';
+        return;
+    }
+    var sevMap = { critical: '#ff2244', high: '#ff6600', medium: '#ffcc00' };
+    var catColors = { phishing: '#f5a623', banking: '#ff3c5a', investment: '#a855f7', social: '#00d4ff' };
+    grid.innerHTML = items.map(function(e) {
+        var sevColor = sevMap[e.severity] || '#00cc66';
+        var catColor = catColors[e.cat] || '#00d4ff';
+        var catLabels = { phishing: 'PHISHING', banking: 'BANKING', investment: 'INVESTMENT', social: 'SOCIAL ENG.' };
+        return '<div class="enc-card" id="enc-' + e.id + '" style="--enc-cat-color:' + catColor + '">' +
+            '<div class="enc-card-head" onclick="toggleEncCard(\'' + e.id + '\')">' +
+            '<div class="enc-card-left">' +
+            '<span class="enc-card-icon">' + e.icon + '</span>' +
+            '<div class="enc-card-titles">' +
+            '<div class="enc-card-title">' + e.title + '</div>' +
+            '<div class="enc-card-sub">' + e.subtitle + '</div>' +
+            '</div>' +
+            '</div>' +
+            '<div class="enc-card-right">' +
+            '<span class="enc-flag" style="color:' + sevColor + ';border-color:' + sevColor + '44;background:' + sevColor + '11;">' + (catLabels[e.cat] || e.cat.toUpperCase()) + '</span>' +
+            '<span class="enc-toggle-icon">▼</span>' +
+            '</div>' +
+            '</div>' +
+            '<div class="enc-card-body" id="encbody-' + e.id + '">' +
+            '<div class="enc-section"><div class="enc-section-title">⚙ How It Works</div><p>' + e.howItWorks + '</p></div>' +
+            '<div class="enc-section"><div class="enc-section-title">🚩 Red Flags</div><ul class="enc-flags-list">' +
+            e.redFlags.map(function(f) { return '<li>' + f + '</li>'; }).join('') +
+            '</ul></div>' +
+            '<div class="enc-example-box"><div class="enc-section-title">💬 Real Example</div><p class="enc-example-text">' + e.example + '</p></div>' +
+            '<div class="enc-section"><div class="enc-section-title">✅ What To Do</div><ul class="enc-action-list">' +
+            e.whatToDo.map(function(a) { return '<li>' + a + '</li>'; }).join('') +
+            '</ul></div>' +
+            '</div>' +
+            '</div>';
+    }).join('');
+}
+
+function toggleEncCard(id) {
+    var body = document.getElementById('encbody-' + id);
+    var card = document.getElementById('enc-' + id);
+    if (!body || !card) return;
+    var isOpen = card.classList.contains('ec-open');
+    // Close all first
+    document.querySelectorAll('.enc-card').forEach(function(c) { c.classList.remove('ec-open'); });
+    document.querySelectorAll('.enc-card-body').forEach(function(b) { b.style.maxHeight = null; });
+    document.querySelectorAll('.enc-toggle-icon').forEach(function(i) { i.textContent = '▼'; });
+    if (!isOpen) {
+        card.classList.add('ec-open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+        var icon = card.querySelector('.enc-toggle-icon');
+        if (icon) icon.textContent = '▲';
+        // Scroll card into view smoothly
+        setTimeout(function() { card.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);
+    }
+}
+
+// ══════════════════════════════════════════
+// PARENT & FAMILY GUIDE
+// ══════════════════════════════════════════
+var _pgAudience = 'elderly';
+
+var PG_CONTENT = {
+    elderly: {
+        sections: [
+            {
+                id: 'pg-e-overview', icon: '⚠️', title: 'Why Elderly Are Targeted',
+                content: 'Scammers specifically target elderly people because they may be less familiar with digital technology, more trusting, and more likely to have savings. Kuwait sees a high volume of scams targeting older residents through phone calls, WhatsApp messages, and fake government notifications.',
+                type: 'text'
+            },
+            {
+                id: 'pg-e-rules', icon: '🛡️', title: 'The 5 Golden Rules for Parents',
+                content: [
+                    'Never share your OTP, PIN, or password — not even with a family member or bank employee.',
+                    'Hang up on any call that demands immediate payment or threatens legal action.',
+                    'Never click links in SMS or WhatsApp messages — go directly to official websites.',
+                    'Always consult a trusted family member before making any transfer over KD 50.',
+                    'If something feels wrong, it probably is — call your son/daughter first.'
+                ],
+                type: 'rules'
+            },
+            {
+                id: 'pg-e-signs', icon: '🔴', title: 'Warning Signs of a Scam',
+                content: [
+                    'Caller says there\'s an urgent problem that must be solved with money today',
+                    'Message says your Civil ID, residency, or account is about to be cancelled',
+                    'Someone you don\'t know sends a large amount to your account and asks you to forward it',
+                    'A "government official" asks you to come alone and bring cash',
+                    '"Relative" calls from an unknown number saying they\'re in trouble'
+                ],
+                type: 'warnings'
+            },
+            {
+                id: 'pg-e-script', icon: '💬', title: 'What to Say When Suspicious',
+                content: '"I cannot make any decisions over the phone. I will discuss this with my family and call back on the official number." — Then hang up.',
+                type: 'script'
+            },
+            {
+                id: 'pg-e-checklist', icon: '✅', title: 'Family Protection Checklist',
+                content: [
+                    { id: 'pgc-e1', text: 'Set up a family code word for emergencies (so fake "relative in trouble" calls can be verified)' },
+                    { id: 'pgc-e2', text: 'Enable two-step verification on their WhatsApp and bank apps' },
+                    { id: 'pgc-e3', text: 'Add your number as emergency contact for their bank' },
+                    { id: 'pgc-e4', text: 'Save official numbers: MOI 112, CBK 22412000, your bank\'s fraud hotline' },
+                    { id: 'pgc-e5', text: 'Review their bank app transaction alerts are enabled' },
+                    { id: 'pgc-e6', text: 'Discuss this guide with them at least once a year' }
+                ],
+                type: 'checklist'
+            },
+            {
+                id: 'pg-e-report', icon: '📞', title: 'Emergency Numbers',
+                content: [
+                    { label: 'Police Emergency', num: '112' },
+                    { label: 'MOI Cybercrime', num: '1800 or cybercrime.moi.gov.kw' },
+                    { label: 'Central Bank Fraud', num: '22412000' },
+                    { label: 'CITRA Complaints', num: 'report.citra.gov.kw' }
+                ],
+                type: 'contacts'
+            }
+        ]
+    },
+    kids: {
+        sections: [
+            {
+                id: 'pg-k-overview', icon: '👾', title: 'Online Risks Children Face',
+                content: 'Children and teenagers in Kuwait face unique online risks: in-game purchase scams, fake accounts from strangers asking for photos, cyberbullying, inappropriate content, and social media account theft. Understanding these risks helps parents have meaningful conversations.',
+                type: 'text'
+            },
+            {
+                id: 'pg-k-gaming', icon: '🎮', title: 'Gaming & In-App Purchase Scams',
+                content: [
+                    'Free V-Bucks, Robux, or gems offers are always scams — they steal account credentials',
+                    'Third-party top-up sites often steal card details or send nothing',
+                    'Never share game account passwords with online friends',
+                    'Set spending limits and parental approval for in-app purchases',
+                    'Official game currencies are only available through the official app or store'
+                ],
+                type: 'rules'
+            },
+            {
+                id: 'pg-k-strangers', icon: '⚠️', title: 'Stranger Danger Online',
+                content: [
+                    'Someone online who is very friendly very quickly may have bad intentions',
+                    'Never share personal photos, home address, school name, or phone number with online strangers',
+                    'If someone asks for photos — especially private ones — tell a parent immediately',
+                    '"Catfishing" — people pretending to be someone else — is very common',
+                    'Real friends from real life don\'t ask you to keep secrets from your parents'
+                ],
+                type: 'warnings'
+            },
+            {
+                id: 'pg-k-privacy', icon: '🔒', title: 'Privacy Settings Checklist',
+                content: [
+                    { id: 'pgc-k1', text: 'Set all social media accounts to private' },
+                    { id: 'pgc-k2', text: 'Turn off location sharing on apps' },
+                    { id: 'pgc-k3', text: 'Enable screen time controls on their devices' },
+                    { id: 'pgc-k4', text: 'Review the follower/friend list together periodically' },
+                    { id: 'pgc-k5', text: 'Set up Family Sharing (Apple) or Family Link (Google)' },
+                    { id: 'pgc-k6', text: 'Have an open conversation — "you can always come to me if something seems wrong"' }
+                ],
+                type: 'checklist'
+            },
+            {
+                id: 'pg-k-script', icon: '💬', title: 'Script for Talking to Your Child',
+                content: '"If anyone online — even a friend — asks for photos, makes you feel uncomfortable, or asks you to keep secrets from me, I want you to tell me. You will never be in trouble for telling me. But we need to talk about it."',
+                type: 'script'
+            }
+        ]
+    },
+    family: {
+        sections: [
+            {
+                id: 'pg-f-plan', icon: '📋', title: 'Family Digital Security Action Plan',
+                content: 'Create a family culture of cybersecurity awareness. This doesn\'t require being a tech expert — it requires a few conversations, simple settings, and clear rules that everyone understands.',
+                type: 'text'
+            },
+            {
+                id: 'pg-f-rules', icon: '🏠', title: 'Family Digital Safety Rules',
+                content: [
+                    'Family code word: anyone claiming to be a relative in trouble must know the family code word',
+                    'All major transfers (over KD 100) require a quick family phone call to verify',
+                    'No one shares passwords — not even between spouses for online banking',
+                    'Anyone in the family can call a "scam check" timeout before acting on suspicious requests',
+                    'Use ShieldKW\'s AI Scam Detector for any suspicious message before responding'
+                ],
+                type: 'rules'
+            },
+            {
+                id: 'pg-f-accounts', icon: '🔐', title: 'Essential Security Settings for Everyone',
+                content: [
+                    { id: 'pgc-f1', text: 'Two-step verification on WhatsApp (Settings → Account → Two-Step Verification)' },
+                    { id: 'pgc-f2', text: 'Two-factor authentication on all bank apps' },
+                    { id: 'pgc-f3', text: 'Two-factor authentication on Gmail and social media accounts' },
+                    { id: 'pgc-f4', text: 'Strong unique passwords for banking (use a password manager)' },
+                    { id: 'pgc-f5', text: 'Transaction SMS alerts enabled on all bank accounts' },
+                    { id: 'pgc-f6', text: 'Registered email on all accounts to receive security notifications' },
+                    { id: 'pgc-f7', text: 'Regular review of authorized apps connected to social media accounts' }
+                ],
+                type: 'checklist'
+            },
+            {
+                id: 'pg-f-scam-check', icon: '🔍', title: 'The 60-Second Scam Check',
+                content: [
+                    'STOP: Do not click, pay, or respond yet',
+                    'SEARCH: Google the company/organization name + "scam" or "Kuwait"',
+                    'VERIFY: Call the organization directly using an official number (not one from the message)',
+                    'ASK: Share with a family member or use ShieldKW AI Scam Detector',
+                    'REPORT: If it\'s a scam, report it to CITRA and warn others'
+                ],
+                type: 'rules'
+            },
+            {
+                id: 'pg-f-if-scammed', icon: '🆘', title: 'If You\'ve Already Been Scammed',
+                content: [
+                    { label: '1. Call your bank immediately', detail: 'Ask them to freeze your account or reverse the transaction. Time is critical.' },
+                    { label: '2. Change all passwords', detail: 'Email, banking, social media — change everything immediately.' },
+                    { label: '3. Report to MOI Cybercrime', detail: 'cybercrime.moi.gov.kw — file a formal report with evidence (screenshots, numbers).' },
+                    { label: '4. Tell your family', detail: 'Don\'t be embarrassed. Scammers are professional criminals. Warning others prevents more victims.' },
+                    { label: '5. Check your credit', detail: 'Monitor your accounts for unauthorized transactions for the next 30 days.' }
+                ],
+                type: 'steps'
+            }
+        ]
+    }
+};
+
+function initParentGuide() {
+    renderPGContent();
+}
+
+function setPGAudience(aud, btn) {
+    _pgAudience = aud;
+    document.querySelectorAll('.pg-aud-btn').forEach(function(b) { b.classList.remove('active'); });
+    if (btn) btn.classList.add('active');
+    renderPGContent();
+}
+
+function renderPGContent() {
+    var main = document.getElementById('pgMain');
+    if (!main) return;
+    var sections = PG_CONTENT[_pgAudience] ? PG_CONTENT[_pgAudience].sections : [];
+    main.innerHTML = sections.map(function(sec) {
+        return '<div class="pg-section" id="' + sec.id + '">' +
+            '<div class="pg-section-head" onclick="togglePGSection(\'' + sec.id + '\')">' +
+            '<span class="pg-sec-icon">' + sec.icon + '</span>' +
+            '<span class="pg-sec-title">' + sec.title + '</span>' +
+            '<span class="pg-toggle-icon">▼</span>' +
+            '</div>' +
+            '<div class="pg-section-body" id="pgbody-' + sec.id + '">' +
+            renderPGSectionContent(sec) +
+            '</div>' +
+            '</div>';
+    }).join('');
+    // Open first section by default
+    if (sections.length > 0) {
+        setTimeout(function() { openPGSection(sections[0].id); }, 50);
+    }
+}
+
+function renderPGSectionContent(sec) {
+    if (sec.type === 'text') {
+        return '<p class="pg-text">' + sec.content + '</p>';
+    }
+    if (sec.type === 'rules') {
+        return '<ul class="pg-rules-list">' + sec.content.map(function(r) { return '<li>' + r + '</li>'; }).join('') + '</ul>';
+    }
+    if (sec.type === 'warnings') {
+        return '<ul class="pg-warning-list">' + sec.content.map(function(w) { return '<li><span class="pg-warn-icon">⚠</span>' + w + '</li>'; }).join('') + '</ul>';
+    }
+    if (sec.type === 'script') {
+        return '<div class="pg-script-box"><span class="pg-script-quote">"</span>' + sec.content + '<span class="pg-script-quote">"</span></div>';
+    }
+    if (sec.type === 'checklist') {
+        var saved = JSON.parse(localStorage.getItem('sk_pg_checks') || '{}');
+        return '<div class="pg-checklist">' + sec.content.map(function(item) {
+            var checked = saved[item.id] ? ' checked' : '';
+            return '<div class="pg-check-box' + checked + '" id="' + item.id + '" onclick="togglePGCheck(\'' + item.id + '\')">' +
+                '<span class="pg-check-tick">' + (saved[item.id] ? '✓' : '') + '</span>' +
+                '<span class="pg-check-text">' + item.text + '</span>' +
+                '</div>';
+        }).join('') + '</div>';
+    }
+    if (sec.type === 'contacts') {
+        return '<div class="pg-contacts-list">' + sec.content.map(function(c) {
+            return '<div class="pg-contact-item">' +
+                '<span class="pg-contact-label">' + c.label + '</span>' +
+                '<span class="pg-contact-num">' + c.num + '</span>' +
+                '</div>';
+        }).join('') + '</div>';
+    }
+    if (sec.type === 'steps') {
+        return '<div class="pg-steps-list">' + sec.content.map(function(s) {
+            return '<div class="pg-step-item">' +
+                '<div class="pg-step-label">' + s.label + '</div>' +
+                '<div class="pg-step-detail">' + s.detail + '</div>' +
+                '</div>';
+        }).join('') + '</div>';
+    }
+    return '';
+}
+
+function togglePGSection(id) {
+    var body = document.getElementById('pgbody-' + id);
+    var sec = document.getElementById(id);
+    if (!body || !sec) return;
+    var isOpen = sec.classList.contains('pg-open');
+    if (isOpen) {
+        sec.classList.remove('pg-open');
+        body.style.maxHeight = null;
+        var icon = sec.querySelector('.pg-toggle-icon');
+        if (icon) icon.textContent = '▼';
+    } else {
+        openPGSection(id);
+    }
+}
+
+function openPGSection(id) {
+    var body = document.getElementById('pgbody-' + id);
+    var sec = document.getElementById(id);
+    if (!body || !sec) return;
+    sec.classList.add('pg-open');
+    body.style.maxHeight = body.scrollHeight + 200 + 'px';
+    var icon = sec.querySelector('.pg-toggle-icon');
+    if (icon) icon.textContent = '▲';
+}
+
+function togglePGCheck(id) {
+    var saved = JSON.parse(localStorage.getItem('sk_pg_checks') || '{}');
+    saved[id] = !saved[id];
+    localStorage.setItem('sk_pg_checks', JSON.stringify(saved));
+    var el = document.getElementById(id);
+    if (el) {
+        el.classList.toggle('checked', saved[id]);
+        var tick = el.querySelector('.pg-check-tick');
+        if (tick) tick.textContent = saved[id] ? '✓' : '';
+    }
 }

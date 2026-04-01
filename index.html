@@ -40,54 +40,66 @@
 </header>
 
 <!-- TAB BAR -->
-<div class="tabbar">
-  <div class="tab active" onclick="switchTab('map',this)">
-    <span class="tab-num">01</span>
-    <span class="tab-ico">🗺️</span>
-    <span class="tab-lbl" data-i18n="tab-map">Threat Map</span>
+  <div class="tabbar">
+    <!-- ── INTEL ── -->
+    <div class="tab-group-label">INTEL</div>
+    <div class="tab active" onclick="switchTab('map',this)">
+      <span class="tab-num">01</span>
+      <span class="tab-ico">🗺️</span>
+      <span class="tab-lbl" data-i18n="tab-map">Threat Map</span>
+    </div>
+    <div class="tab" onclick="switchTab('news',this)">
+      <span class="tab-num">02</span>
+      <span class="tab-ico">📰</span>
+      <span class="tab-lbl" data-i18n="tab-news">Scam News</span>
+      <span class="tab-badge tab-badge-live">LIVE</span>
+    </div>
+    <div class="tab-sep"></div>
+    <!-- ── TOOLS ── -->
+    <div class="tab-group-label">TOOLS</div>
+    <div class="tab" onclick="switchTab('ai',this)">
+      <span class="tab-num">03</span>
+      <span class="tab-ico">🔍</span>
+      <span class="tab-lbl" data-i18n="tab-ai">Scam Detector</span>
+    </div>
+    <div class="tab" onclick="switchTab('breach',this)">
+      <span class="tab-num">04</span>
+      <span class="tab-ico">🛡️</span>
+      <span class="tab-lbl" data-i18n="tab-breach">Email Breach</span>
+    </div>
+    <div class="tab" onclick="switchTab('pwd',this)">
+      <span class="tab-num">05</span>
+      <span class="tab-ico">🔐</span>
+      <span class="tab-lbl" data-i18n="tab-pwd">Password Check</span>
+    </div>
+    <div class="tab-sep"></div>
+    <!-- ── LEARN ── -->
+    <div class="tab-group-label">LEARN</div>
+    <div class="tab" onclick="switchTab('kb',this)">
+      <span class="tab-num">06</span>
+      <span class="tab-ico">📚</span>
+      <span class="tab-lbl" data-i18n="tab-kb">Knowledge Base</span>
+      <span class="tab-badge" id="kbCount"></span>
+    </div>
+    <div class="tab" onclick="switchTab('sim',this)">
+      <span class="tab-num">07</span>
+      <span class="tab-ico">🎯</span>
+      <span class="tab-lbl" data-i18n="tab-sim">Phishing Sim</span>
+    </div>
+    <div class="tab-sep"></div>
+    <!-- ── DATA ── -->
+    <div class="tab-group-label">DATA</div>
+    <div class="tab" onclick="switchTab('stats',this)">
+      <span class="tab-num">08</span>
+      <span class="tab-ico">📊</span>
+      <span class="tab-lbl" data-i18n="tab-stats">Statistics</span>
+    </div>
+    <div class="tab" onclick="switchTab('about',this)">
+      <span class="tab-num">09</span>
+      <span class="tab-ico">ℹ️</span>
+      <span class="tab-lbl" data-i18n="tab-about">About</span>
+    </div>
   </div>
-  <div class="tab" onclick="switchTab('ai',this)">
-    <span class="tab-num">02</span>
-    <span class="tab-ico">🔍</span>
-    <span class="tab-lbl" data-i18n="tab-ai">Scam Detector</span>
-  </div>
-  <div class="tab" onclick="switchTab('kb',this)">
-    <span class="tab-num">03</span>
-    <span class="tab-ico">📚</span>
-    <span class="tab-lbl" data-i18n="tab-kb">Knowledge Base</span>
-    <span class="tab-badge" id="kbCount"></span>
-  </div>
-  <div class="tab" onclick="switchTab('sim',this)">
-    <span class="tab-num">04</span>
-    <span class="tab-ico">🎯</span>
-    <span class="tab-lbl" data-i18n="tab-sim">Phishing Sim</span>
-  </div>
-  <div class="tab" onclick="switchTab('stats',this)">
-    <span class="tab-num">05</span>
-    <span class="tab-ico">📊</span>
-    <span class="tab-lbl" data-i18n="tab-stats">Statistics</span>
-  </div>
-  <div class="tab" onclick="switchTab('pwd',this)">
-    <span class="tab-num">06</span>
-    <span class="tab-ico">🔐</span>
-    <span class="tab-lbl" data-i18n="tab-pwd">Password Check</span>
-  </div>
-  <div class="tab" onclick="switchTab('link',this)">
-    <span class="tab-num">07</span>
-    <span class="tab-ico">🔗</span>
-    <span class="tab-lbl" data-i18n="tab-link">Link Scanner</span>
-  </div>
-  <div class="tab" onclick="switchTab('breach',this)">
-    <span class="tab-num">08</span>
-    <span class="tab-ico">🛡️</span>
-    <span class="tab-lbl" data-i18n="tab-breach">Email Breach</span>
-  </div>
-  <div class="tab" onclick="switchTab('about',this)">
-    <span class="tab-num">09</span>
-    <span class="tab-ico">ℹ️</span>
-    <span class="tab-lbl" data-i18n="tab-about">About</span>
-  </div>
-</div>
 
 <!-- MAIN -->
 <div class="main">
@@ -704,6 +716,44 @@
   </div>
 
 
+
+  <!-- ══ PAGE: SCAM NEWS FEED ══ -->
+  <div class="page" id="page-news">
+    <div class="news-page">
+      <div class="news-hero">
+        <div class="tool-pretag">// LIVE INTELLIGENCE FEED</div>
+        <h2 class="tool-h2">Kuwait Scam News</h2>
+        <p class="tool-sub">Real-time cybersecurity alerts, official government warnings, and threat intelligence targeting Kuwait.</p>
+        <div class="news-hero-meta">
+          <div class="news-live-pill"><span class="news-live-dot"></span>LIVE</div>
+          <div class="news-src-strip">
+            <span class="news-src-badge ns-citra">CITRA</span>
+            <span class="news-src-badge ns-cbk">CBK</span>
+            <span class="news-src-badge ns-moi">MOI</span>
+            <span class="news-src-badge ns-global">Global Intel</span>
+          </div>
+          <div class="news-feed-status" id="newsFeedStatus">Loading live articles…</div>
+        </div>
+      </div>
+      <div class="news-main">
+        <div class="news-controls">
+          <div class="news-filter-bar">
+            <button class="news-filter-btn active" onclick="filterNews('all',this)">All</button>
+            <button class="news-filter-btn nfb-official" onclick="filterNews('official',this)">🏛 Official</button>
+            <button class="news-filter-btn nfb-phishing" onclick="filterNews('phishing',this)">🎣 Phishing</button>
+            <button class="news-filter-btn nfb-banking" onclick="filterNews('banking',this)">🏦 Banking</button>
+            <button class="news-filter-btn nfb-investment" onclick="filterNews('investment',this)">📈 Investment</button>
+          </div>
+          <div class="news-search-wrap">
+            <span class="news-search-ico">🔍</span>
+            <input type="text" id="newsSearch" class="news-search-input" placeholder="Search alerts…" oninput="searchNews(this.value)">
+          </div>
+        </div>
+        <div id="newsFeed" class="news-feed-list"></div>
+      </div>
+    </div>
+  </div>
+
 </div><!-- /main -->
 
 <!-- REPORT MODAL -->
@@ -835,6 +885,6 @@
 
 <div id="toast"></div>
 
-<script src="script.js"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>
