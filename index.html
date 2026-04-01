@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idk to put herer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Deathlog</h1>
+        </header>
+
+        <div class="main-content">
+            <div class="input-section">
+                <label for="deathLog">Paste Death Log:</label>
+                <textarea id="deathLog"
+                    placeholder="wow look at this xCroz guy. smh bro -- trust xCroz will awaken the titans and kill everyone + nuke everyone..."></textarea>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="yearInput">Year:</label>
+                        <input type="text" id="yearInput" placeholder="558 AY" value="558 AY">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="miscInput">Misc (optional) i wonder for what. i know you gonna put "test"</label>
+                        <input type="text" id="miscInput" placeholder="Additional notes...">
+                    </div>
+                </div>
+
+                <button id="formatBtn" class="btn-primary">output here Crazy right.</button>
+            </div>
+
+            <div class="output-section">
+                <div class="output-header">
+                    <label>BOMBOCLAT how did this happen:</label>
+                    <button id="copyBtn" class="btn-secondary">Copy to Clipboard</button>
+                </div>
+                <textarea id="output" readonly placeholder="man wallahi i must stop"></textarea>
+                <div id="notification" class="notification">Copied to clipboard!</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
