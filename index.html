@@ -1116,14 +1116,19 @@ Report submitted! Thank you for keeping Kuwait safe.
 </div>
 <div class="tour-overlay" id="tourOverlay">
 <div class="tour-modal">
-<div class="tour-accent-bar" id="tourAccentBar"></div>
+<div class="tour-top-bar">
+<div class="tour-step-num" id="tourStepNum">01 / 10</div>
 <button class="tour-close" onclick="closeTour()">✕</button>
-<div class="tour-dots" id="tourDots"></div>
+</div>
 <div class="tour-visual" id="tourVisual">
+<div class="tour-visual-grid"></div>
 <div class="tour-visual-glow" id="tourVisualGlow"></div>
+<div class="tour-vring tour-vring-1" id="tourRing1"></div>
+<div class="tour-vring tour-vring-2" id="tourRing2"></div>
 <div class="tour-icon" id="tourIcon"></div>
 </div>
-<div class="tour-body">
+<div class="tour-dots" id="tourDots"></div>
+<div class="tour-body" id="tourBody">
 <div class="tour-tag" id="tourTag"></div>
 <div class="tour-heading" id="tourHeading"></div>
 <div class="tour-desc" id="tourDesc"></div>
@@ -1133,6 +1138,9 @@ Report submitted! Thank you for keeping Kuwait safe.
 <button class="tour-btn tour-btn-prev" id="tourPrev" onclick="tourNav(-1)"></button>
 <button class="tour-btn tour-btn-skip" onclick="closeTour()"></button>
 <button class="tour-btn tour-btn-next" id="tourNext" onclick="tourNav(1)"></button>
+</div>
+<div class="tour-progress-track">
+<div class="tour-progress-fill" id="tourProgressFill"></div>
 </div>
 </div>
 </div>
