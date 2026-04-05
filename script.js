@@ -8166,193 +8166,74 @@ if (el) el.textContent = (typeof NEWS_DATA !== 'undefined' ? NEWS_DATA.length : 
 }
 var TOUR_STEPS = [{
 icon: '🛡️',
-tag: {
-en: 'WELCOME',
-ar: 'أهلاً بك'
-},
-heading: {
-en: 'Kuwait\'s Cyber Shield',
-ar: 'درع الكويت الرقمي'
-},
-desc: {
-en: 'ShieldKW is Kuwait\'s first community-driven cybersecurity awareness platform — built to protect you from digital scams, phishing, and data breaches. 9 powerful tools, all in one place, in Arabic and English.',
-ar: 'ShieldKW هي أول منصة كويتية مجتمعية للتوعية بالأمن السيبراني — مبنية لتحميك من النصب الرقمي والتصيد وتسريبات البيانات. 9 أدوات قوية في مكان واحد، عربي وإنجليزي.'
-},
-tip: {
-en: '💡 Tap ❓ in the header anytime to re-open this guide.',
-ar: '💡 اضغط ❓ في الهيدر في أي وقت لإعادة فتح هذا الدليل.'
-},
-color: '#00d4ff',
-color2: '#0066cc',
-glow: 'rgba(0,212,255,0.15)'
-}, {
+tag: {en:'WELCOME',ar:'أهلاً بك'},
+heading: {en:"Kuwait's Cyber Shield",ar:'درع الكويت الرقمي'},
+desc: {en:'ShieldKW is Kuwait\'s first community-driven cybersecurity platform — built to protect you from scams, phishing, and data breaches. 8 tools, all in one place, in Arabic and English.',ar:'ShieldKW هي أول منصة كويتية مجتمعية للأمن السيبراني — مبنية لتحميك من النصب والتصيد وتسريبات البيانات. 8 أدوات في مكان واحد، عربي وإنجليزي.'},
+tip: {en:'💡 Tap ❓ in the header anytime to re-open this guide.',ar:'💡 اضغط ❓ في الهيدر في أي وقت لإعادة فتح هذا الدليل.'},
+color:'#00d4ff',color2:'#0066cc',glow:'rgba(0,212,255,0.15)'
+},{
 icon: '🗺️',
-tag: {
-en: 'TAB 01',
-ar: 'تبويب 01'
-},
-heading: {
-en: 'Community Threat Map',
-ar: 'خريطة التهديدات المجتمعية'
-},
-desc: {
-en: 'A live interactive map of cyber threats reported across all 6 Kuwait governorates. Filter by severity, toggle between pin and heatmap views, and see the live threat timeline. Every report comes from real Kuwaitis.',
-ar: 'خريطة تفاعلية حية للتهديدات السيبرانية المبلّغ عنها في كل محافظات الكويت الـ6. فلتر حسب الخطورة، وتبدّل بين عرض الدبابيس والخريطة الحرارية، وشاهد الجدول الزمني الحي. كل بلاغ من كويتي حقيقي.'
-},
-tip: {
-en: '💡 Hit "Report a Scam" to protect others — your report stays anonymous.',
-ar: '💡 اضغط "بلّغ عن نصبة" لتحمي غيرك — بلاغك يبقى مجهول الهوية.'
-},
-color: '#00ff88',
-color2: '#009944',
-glow: 'rgba(0,255,136,0.12)'
-}, {
-icon: '🔍',
-tag: {
-en: 'TAB 02',
-ar: 'تبويب 02'
-},
-heading: {
-en: 'AI Scam Detector',
-ar: 'كاشف الاحتيال بالذكاء الاصطناعي'
-},
-desc: {
-en: 'Chat with an AI assistant powered by Gemma 3 27B. Paste any suspicious message, link, or email — the AI analyzes it, explains how the scam works, and tells you what to do. Ask follow-up questions to learn more.',
-ar: 'تحدث مع مساعد ذكاء اصطناعي مدعوم بـ Gemma 3 27B. الصق أي رسالة أو رابط أو إيميل مشبوه — الذكاء الاصطناعي يحلله ويشرح كيف النصبة تشتغل ويقولك شنو تسوي. اسأل أسئلة متابعة لمعرفة المزيد.'
-},
-tip: {
-en: '💡 Try the quick examples or paste any message you received that looks suspicious.',
-ar: '💡 جرّب الأمثلة السريعة أو الصق أي رسالة وصلتك وشكلها مشبوه.'
-},
-color: '#f5a623',
-color2: '#cc6600',
-glow: 'rgba(245,166,35,0.12)'
-}, {
+tag: {en:'TAB 01',ar:'تبويب 01'},
+heading: {en:'Community Threat Map',ar:'خريطة التهديدات'},
+desc: {en:'A live map of scams reported across all 6 Kuwait governorates. Filter by severity, switch between pin and heatmap views, and watch the live threat timeline.',ar:'خريطة حية للنصب والتهديدات في كل محافظات الكويت الـ6. فلتر حسب الخطورة وتبدّل بين الدبابيس والخريطة الحرارية وشاهد الجدول الزمني الحي.'},
+tip: {en:'💡 Hit "Report a Scam" to protect others — your report stays anonymous.',ar:'💡 اضغط "بلّغ عن نصبة" لتحمي غيرك — بلاغك يبقى مجهول الهوية.'},
+color:'#00ff88',color2:'#009944',glow:'rgba(0,255,136,0.12)'
+},{
+icon: '📰',
+tag: {en:'TAB 02',ar:'تبويب 02'},
+heading: {en:'Scam News',ar:'أخبار النصب'},
+desc: {en:'Live cybersecurity news from trusted sources, updated daily. Stay on top of the latest scams hitting Kuwait and the region. Filter by topic to find what matters to you.',ar:'أخبار الأمن السيبراني المباشرة من مصادر موثوقة، تُحدّث يومياً. ابقَ على اطلاع بآخر النصب في الكويت والمنطقة. فلتر حسب الموضوع.'},
+tip: {en:'💡 New articles are pulled in daily — check back often.',ar:'💡 مقالات جديدة تُضاف يومياً — تابعنا باستمرار.'},
+color:'#f5a623',color2:'#cc6600',glow:'rgba(245,166,35,0.12)'
+},{
+icon: '🔓',
+tag: {en:'TAB 03',ar:'تبويب 03'},
+heading: {en:'CVE Tracker',ar:'متتبع الثغرات'},
+desc: {en:'Live feed of the latest CVEs (security holes) from the National Vulnerability Database. See what was just found, how serious it is, and which software is affected.',ar:'تغذية حية لأحدث الثغرات الأمنية (CVE) من قاعدة بيانات الثغرات الوطنية. شاهد ما اكتُشف للتو ومدى خطورته والبرامج المتأثرة.'},
+tip: {en:'💡 CVSS score 9+ means critical — update your software fast if you see one.',ar:'💡 درجة CVSS 9+ تعني حرجة — حدّث برامجك سريعاً إذا شفت واحدة.'},
+color:'#ff3c5a',color2:'#cc0033',glow:'rgba(255,60,90,0.12)'
+},{
+icon: '🤖',
+tag: {en:'TAB 04',ar:'تبويب 04'},
+heading: {en:'AI Scam Detector',ar:'كاشف الاحتيال بالذكاء الاصطناعي'},
+desc: {en:'Chat with an AI to check suspicious messages, links, and emails. Paste anything that looks off — the AI breaks it down and tells you exactly what to do.',ar:'تحدث مع ذكاء اصطناعي لتحليل الرسائل والروابط والإيميلات المشبوهة. الصق أي شيء يبدو مريباً — الذكاء يشرح كيف النصبة تشتغل.'},
+tip: {en:'💡 Try the quick examples or paste any message you got that felt suspicious.',ar:'💡 جرّب الأمثلة السريعة أو الصق أي رسالة وصلتك وشكلها مشبوه.'},
+color:'#a855f7',color2:'#6600cc',glow:'rgba(168,85,247,0.12)'
+},{
 icon: '🎯',
-tag: {
-en: 'TAB 03',
-ar: 'تبويب 03'
-},
-heading: {
-en: 'Phishing Simulator',
-ar: 'محاكي التصيد'
-},
-desc: {
-en: 'An interactive quiz with 56 real-world Kuwaiti scam scenarios — SMS fraud, fake bank calls, WhatsApp account theft, investment scams, and more. Each session picks 20 random scenarios. After every answer, you get a detailed explanation of the scam tactic used.',
-ar: 'اختبار تفاعلي مع 56 سيناريو احتيال كويتي حقيقي — نصب SMS ومكالمات بنوك مزيفة وسرقة حسابات واتساب واحتيالات استثمارية والمزيد. كل جلسة تختار 20 سيناريو عشوائي. بعد كل إجابة تحصل على شرح تفصيلي لأسلوب الاحتيال.'
-},
-tip: {
-en: '💡 Your personal best is saved locally. Can you score 20/20?',
-ar: '💡 أفضل نتيجة لك تُحفظ محلياً. هل تقدر تحصل على 20/20؟'
-},
-color: '#a855f7',
-color2: '#6600cc',
-glow: 'rgba(168,85,247,0.12)'
-}, {
+tag: {en:'TAB 05',ar:'تبويب 05'},
+heading: {en:'Phishing Simulator',ar:'محاكي التصيد'},
+desc: {en:'Test yourself with 56 real Kuwaiti scam scenarios — fake bank calls, WhatsApp theft, SMS fraud, and more. Each round picks 20 random ones. After every answer you get a full breakdown.',ar:'اختبر نفسك مع 56 سيناريو احتيال كويتي حقيقي — مكالمات بنوك مزيفة وسرقة واتساب ونصب SMS والمزيد. كل جلسة 20 سيناريو عشوائي.'},
+tip: {en:'💡 Your best score is saved. Can you get 20/20?',ar:'💡 أفضل نتيجة لك تُحفظ. هل تقدر تحصل على 20/20؟'},
+color:'#00ff88',color2:'#009944',glow:'rgba(0,255,136,0.12)'
+},{
 icon: '📚',
-tag: {
-en: 'TAB 04',
-ar: 'تبويب 04'
-},
-heading: {
-en: 'Knowledge Base',
-ar: 'قاعدة المعرفة'
-},
-desc: {
-en: '34 curated cybersecurity articles covering NIST frameworks, Kuwait cyber law, banking security, AI scams, VPN safety, gaming threats, and more. Every article links to official sources — CISA, NIST, and Kuwait government sites. Track your reading progress too.',
-ar: '34 مقالة أمن سيبراني منتقاة تغطي أطر NIST والقانون السيبراني الكويتي وأمان البنوك واحتيالات الذكاء الاصطناعي وVPN وتهديدات الألعاب والمزيد. كل مقالة تربط بمصادر رسمية — CISA وNIST ومواقع الحكومة الكويتية. تابع تقدمك في القراءة أيضاً.'
-},
-tip: {
-en: '💡 Use the category filters + search to find exactly what you need.',
-ar: '💡 استخدم فلاتر الفئات والبحث للعثور على ما تريد بالضبط.'
-},
-color: '#00d4ff',
-color2: '#0055cc',
-glow: 'rgba(0,212,255,0.12)'
-}, {
+tag: {en:'TAB 06',ar:'تبويب 06'},
+heading: {en:'Knowledge Base',ar:'قاعدة المعرفة'},
+desc: {en:'34 cybersecurity articles covering Kuwait cyber law, banking safety, AI scams, VPN tips, and more. Every article links to official sources like CISA and NIST.',ar:'34 مقالة أمن سيبراني تغطي القانون السيبراني الكويتي وأمان البنوك واحتيالات الذكاء الاصطناعي وNIST والمزيد. كل مقالة مربوطة بمصادر رسمية.'},
+tip: {en:'💡 Use the category filters and search to find exactly what you need.',ar:'💡 استخدم فلاتر الفئات والبحث للعثور على ما تريد بالضبط.'},
+color:'#00d4ff',color2:'#0055cc',glow:'rgba(0,212,255,0.12)'
+},{
 icon: '🔐',
-tag: {
-en: 'TAB 06',
-ar: 'تبويب 06'
-},
-heading: {
-en: 'Password Strength Checker',
-ar: 'فاحص قوة كلمة المرور'
-},
-desc: {
-en: 'A 13-point password analysis tool — checks length, complexity, common password lists, keyboard walk patterns, and queries the Have I Been Pwned database to check if your password appeared in any known breach. 100% client-side: your password never leaves your device.',
-ar: 'أداة تحليل كلمة مرور من 13 نقطة — تفحص الطول والتعقيد وقوائم كلمات المرور الشائعة وأنماط لوحة المفاتيح وتستعلم من قاعدة Have I Been Pwned لمعرفة إذا تسرّبت كلمة مرورك. 100% محلي: كلمة مرورك لا تغادر جهازك أبداً.'
-},
-tip: {
-en: '💡 Use the "Generate Strong Password" button to get a cryptographically secure 20-character password instantly.',
-ar: '💡 استخدم زر "توليد كلمة مرور قوية" للحصول فوراً على كلمة مرور آمنة من 20 حرف.'
-},
-color: '#00ff88',
-color2: '#009944',
-glow: 'rgba(0,255,136,0.12)'
-}, {
-icon: '🔗',
-tag: {
-en: 'TAB 07',
-ar: 'تبويب 07'
-},
-heading: {
-en: 'Link & URL Scanner',
-ar: 'فاحص الروابط والعناوين'
-},
-desc: {
-en: 'Paste any suspicious URL and our scanner runs 10 instant local checks PLUS live queries to 5 cybersecurity APIs: VirusTotal (70+ antivirus engines), Google Safe Browsing, PhishTank, IPQualityScore, and URLScan.io. Full risk verdict in seconds.',
-ar: 'الصق أي رابط مشبوه وفاحصنا يجري 10 فحوصات محلية فورية بالإضافة إلى استعلامات حية لـ5 APIs أمن سيبراني: VirusTotal (70+ محرك)، Google Safe Browsing، PhishTank، IPQualityScore، وURLScan.io. حكم خطر كامل في ثوانٍ.'
-},
-tip: {
-en: '💡 Always check unfamiliar links before clicking — especially ones sent in WhatsApp or SMS.',
-ar: '💡 دائماً افحص الروابط غير المألوفة قبل الضغط عليها — خاصةً المرسلة عبر واتساب أو SMS.'
-},
-color: '#f5a623',
-color2: '#cc6600',
-glow: 'rgba(245,166,35,0.12)'
-}, {
+tag: {en:'TAB 07',ar:'تبويب 07'},
+heading: {en:'Password Checker',ar:'فاحص كلمة المرور'},
+desc: {en:'See how strong your password really is — 13 checks including length, complexity, common lists, and keyboard patterns. Also checks Have I Been Pwned. Your password never leaves your device.',ar:'اعرف مدى قوة كلمة مرورك — 13 فحص مختلف. يفحص Have I Been Pwned أيضاً. كلمة مرورك لا تغادر جهازك أبداً.'},
+tip: {en:'💡 Use "Generate Strong Password" for a secure 20-character password instantly.',ar:'💡 استخدم "توليد كلمة مرور قوية" للحصول فوراً على كلمة مرور آمنة من 20 حرف.'},
+color:'#f5a623',color2:'#cc6600',glow:'rgba(245,166,35,0.12)'
+},{
 icon: '🛡️',
-tag: {
-en: 'TAB 08',
-ar: 'تبويب 08'
-},
-heading: {
-en: 'Email Breach Scanner',
-ar: 'فاحص تسريب الإيميل'
-},
-desc: {
-en: 'Enter your email address to check if it appeared in any known data breach. Powered by XposedOrNot — a free breach database covering 12 billion+ exposed records. If your email is found, you\'ll see exactly which sites were breached and what data was exposed.',
-ar: 'أدخل إيميلك لمعرفة إذا ظهر في أي تسريب بيانات معروف. مدعوم بـ XposedOrNot — قاعدة بيانات مجانية تغطي أكثر من 12 مليار سجل مكشوف. إذا وُجد إيميلك، ستشوف بالضبط أي مواقع تعرّضت للاختراق وما البيانات التي انكشفت.'
-},
-tip: {
-en: '💡 Click any breach card to expand it and see the full details — exposed data types, domain, date, and description.',
-ar: '💡 اضغط على أي بطاقة تسريب لتوسيعها وترى التفاصيل الكاملة — أنواع البيانات المكشوفة والموقع والتاريخ والوصف.'
-},
-color: '#ff3c5a',
-color2: '#cc0033',
-glow: 'rgba(255,60,90,0.12)'
-}, {
+tag: {en:'TAB 08',ar:'تبويب 08'},
+heading: {en:'Email Breach Scanner',ar:'فاحص تسريب الإيميل'},
+desc: {en:'Check if your email showed up in any known data breach. Covers 12 billion+ exposed records. If found, you\'ll see exactly which sites were breached and what data was exposed.',ar:'تحقق إذا إيميلك ظهر في أي تسريب بيانات. يغطي أكثر من 12 مليار سجل. إذا وُجد، ستشوف أي مواقع تعرّضت للاختراق وما البيانات التي انكشفت.'},
+tip: {en:'💡 Tap any breach card to see full details — data types, date, and what was exposed.',ar:'💡 اضغط على أي بطاقة تسريب لترى التفاصيل الكاملة.'},
+color:'#ff3c5a',color2:'#cc0033',glow:'rgba(255,60,90,0.12)'
+},{
 icon: '🇰🇼',
-tag: {
-en: 'BUILT FOR KUWAIT',
-ar: 'مبني للكويت'
-},
-heading: {
-en: 'Your Digital Shield — Always On',
-ar: 'درعك الرقمي — دائماً جاهز'
-},
-desc: {
-en: 'ShieldKW is built specifically for Kuwait — all scam scenarios, threat patterns, and knowledge base articles are tailored to the Kuwaiti digital landscape. Full Arabic (Kuwaiti dialect) and English support, RTL layout, and local threat intelligence.',
-ar: 'ShieldKW مبنية خصيصاً للكويت — كل سيناريوهات الاحتيال وأنماط التهديد ومقالات قاعدة المعرفة مصمّمة للبيئة الرقمية الكويتية. دعم كامل للعربية الكويتية والإنجليزية وتخطيط RTL وذكاء تهديدات محلي.'
-},
-tip: {
-en: '💡 Stay safe out there. If something feels off — it probably is. 🇰🇼',
-ar: '💡 ابقَ بأمان. إذا شيء ما يحس وايد مشبوه — على الأغلب هو فعلاً كذا. 🇰🇼'
-},
-color: '#00d4ff',
-color2: '#00ff88',
-glow: 'rgba(0,212,255,0.12)'
+tag: {en:'BUILT FOR KUWAIT',ar:'مبني للكويت'},
+heading: {en:"You're All Set",ar:'أنت جاهز'},
+desc: {en:'ShieldKW is made specifically for Kuwait — all scam scenarios, threat data, and articles are tailored to the Kuwaiti digital world. Full Arabic and English support. Stay safe out there.',ar:'ShieldKW مبنية خصيصاً للكويت — السيناريوهات والتهديدات والمقالات كلها مصمّمة للبيئة الرقمية الكويتية. دعم كامل للعربي والإنجليزي.'},
+tip: {en:'💡 If something feels off — it probably is. Trust your gut. 🇰🇼',ar:'💡 إذا شيء ما يحس مشبوه — على الأغلب هو كذا. ثق بحدسك. 🇰🇼'},
+color:'#00d4ff',color2:'#00ff88',glow:'rgba(0,212,255,0.12)'
 }];
 var tourCurrentStep = 0;
 function startTour() {
@@ -8365,14 +8246,19 @@ document.getElementById('tourOverlay').classList.remove('open');
 localStorage.setItem('shieldkw_tour_seen', '1');
 }
 function tourNav(dir) {
-tourCurrentStep += dir;
-if (tourCurrentStep < 0)
-tourCurrentStep = 0;
-if (tourCurrentStep >= TOUR_STEPS.length) {
+var newStep = tourCurrentStep + dir;
+if (newStep < 0) return;
+if (newStep >= TOUR_STEPS.length) {
 closeTour();
 return;
 }
+var body = document.getElementById('tourBody');
+if (body) body.classList.add('tb-out');
+setTimeout(function() {
+tourCurrentStep = newStep;
 renderTourStep();
+if (body) body.classList.remove('tb-out');
+}, 180);
 }
 function renderTourStep() {
 var step = TOUR_STEPS[tourCurrentStep];
@@ -8380,52 +8266,66 @@ var total = TOUR_STEPS.length;
 var color = step.color || '#00d4ff';
 var color2 = step.color2 || '#0066cc';
 var glow = step.glow || 'rgba(0,212,255,0.12)';
-var bar = document.getElementById('tourAccentBar');
-if (bar)
-bar.style.background = 'linear-gradient(90deg,' + color + ',' + color2 + ')';
 var modal = document.querySelector('.tour-modal');
 if (modal) {
 modal.style.setProperty('--tc-color', color);
 modal.style.setProperty('--tc-color2', color2);
 modal.style.setProperty('--tc-glow', glow);
-modal.style.setProperty('--tc-grad', 'linear-gradient(90deg,' + color + ',' + color2 + ')');
 }
+var stepNumEl = document.getElementById('tourStepNum');
+if (stepNumEl) {
+var n = String(tourCurrentStep + 1).padStart(2,'0');
+var t = String(total).padStart(2,'0');
+stepNumEl.textContent = n + ' / ' + t;
+}
+var progressEl = document.getElementById('tourProgressFill');
+if (progressEl) {
+progressEl.style.width = ((tourCurrentStep + 1) / total * 100) + '%';
+progressEl.style.background = 'linear-gradient(90deg,' + color + ',' + color2 + ')';
+progressEl.style.boxShadow = '0 0 10px ' + color;
+}
+var ring1 = document.getElementById('tourRing1');
+var ring2 = document.getElementById('tourRing2');
+if (ring1) ring1.style.borderColor = color;
+if (ring2) ring2.style.borderColor = color;
 var dotsEl = document.getElementById('tourDots');
 if (dotsEl) {
 dotsEl.innerHTML = '';
 for (var i = 0; i < total; i++) {
 var dot = document.createElement('div');
 dot.className = 'tour-dot' + (i === tourCurrentStep ? ' td-active' : '');
-dot.style.setProperty('--tc-color', color);
 (function(idx) {
 dot.onclick = function() {
+var body = document.getElementById('tourBody');
+if (body) body.classList.add('tb-out');
+setTimeout(function() {
 tourCurrentStep = idx;
 renderTourStep();
-}
-;
-}
-)(i);
+if (body) body.classList.remove('tb-out');
+}, 180);
+};
+})(i);
 dotsEl.appendChild(dot);
 }
 dotsEl.querySelectorAll('.td-active').forEach(function(d) {
 d.style.background = color;
-d.style.boxShadow = '0 0 8px ' + color;
+d.style.boxShadow = '0 0 7px ' + color;
 });
 }
 var iconEl = document.getElementById('tourIcon');
 if (iconEl) {
 iconEl.textContent = step.icon;
-iconEl.style.filter = 'drop-shadow(0 0 24px ' + color + ')';
+iconEl.style.filter = 'drop-shadow(0 0 28px ' + color + ')';
 }
 var glowEl = document.getElementById('tourVisualGlow');
 if (glowEl)
-glowEl.style.background = 'radial-gradient(ellipse at center, ' + glow + ' 0%, transparent 70%)';
+glowEl.style.background = 'radial-gradient(ellipse at center,' + glow + ' 0%,transparent 65%)';
 var tagEl = document.getElementById('tourTag');
 if (tagEl) {
 tagEl.textContent = rt(step.tag);
 tagEl.style.color = color;
-tagEl.style.background = 'rgba(' + _hexToRgb(color) + ',0.08)';
-tagEl.style.borderColor = 'rgba(' + _hexToRgb(color) + ',0.25)';
+tagEl.style.background = 'rgba(' + _hexToRgb(color) + ',0.07)';
+tagEl.style.borderColor = 'rgba(' + _hexToRgb(color) + ',0.18)';
 }
 document.getElementById('tourHeading').textContent = rt(step.heading);
 document.getElementById('tourDesc').textContent = rt(step.desc);
@@ -8433,20 +8333,15 @@ var tipEl = document.getElementById('tourTip');
 if (tipEl) {
 tipEl.textContent = rt(step.tip);
 tipEl.style.color = color;
-tipEl.style.borderColor = 'rgba(' + _hexToRgb(color) + ',0.15)';
-tipEl.style.background = 'rgba(' + _hexToRgb(color) + ',0.05)';
+tipEl.style.borderColor = 'rgba(' + _hexToRgb(color) + ',0.12)';
+tipEl.style.background = 'rgba(' + _hexToRgb(color) + ',0.04)';
 }
 document.getElementById('tourPrev').textContent = LANG === 'ar' ? '← السابق' : '← Prev';
 document.getElementById('tourPrev').style.visibility = tourCurrentStep === 0 ? 'hidden' : 'visible';
 document.querySelector('.tour-btn-skip').textContent = LANG === 'ar' ? 'تخطي' : 'Skip';
 var nextBtn = document.getElementById('tourNext');
 nextBtn.style.background = 'linear-gradient(135deg,' + color + ',' + color2 + ')';
-nextBtn.style.color = tourCurrentStep === total - 1 ? '#000' : '#000';
-if (tourCurrentStep === total - 1) {
-nextBtn.textContent = LANG === 'ar' ? 'ابدأ الآن ✓' : 'Let\'s Go ✓';
-} else {
-nextBtn.textContent = LANG === 'ar' ? 'التالي →' : 'Next →';
-}
+nextBtn.textContent = tourCurrentStep === total - 1 ? (LANG === 'ar' ? 'ابدأ الآن ✓' : "Let's Go ✓") : (LANG === 'ar' ? 'التالي →' : 'Next →');
 }
 function _hexToRgb(hex) {
 var r = parseInt(hex.slice(1, 3), 16);
