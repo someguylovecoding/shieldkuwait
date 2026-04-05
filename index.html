@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 <title>ShieldKW — Kuwait Cybersecurity Awareness Platform</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -179,15 +179,15 @@
 </div>
 <div class="tm2-view-btns">
 <button class="tm2-vbtn tm2-vbtn-on" id="mctMarkers" onclick="setMapMode('markers',this)">
-<span class="tm2-vbtn-dot"></span>MARKERS
+<span class="tm2-vbtn-dot"></span><span data-i18n="map-markers">MARKERS</span>
 </button>
 <button class="tm2-vbtn" id="mctHeat" onclick="setMapMode('heat',this)">
-<span class="tm2-vbtn-dot" style="background:#f5a623"></span>HEATMAP
+<span class="tm2-vbtn-dot" style="background:#f5a623"></span><span data-i18n="map-heatmap">HEATMAP</span>
 </button>
 </div>
 <div class="tm2-section-hdr" style="margin-top:18px">
 <span class="tm2-shdr-line"></span>
-<span class="tm2-shdr-txt">TIMELINE</span>
+<span class="tm2-shdr-txt" data-i18n="map-timeline">TIMELINE</span>
 </div>
 <div class="tm2-tl-row">
 <button class="tm2-tl-btn" onclick="setTimeline(7,this)">7D</button>
@@ -196,7 +196,7 @@
 </div>
 <div class="tm2-section-hdr" style="margin-top:18px">
 <span class="tm2-shdr-line"></span>
-<span class="tm2-shdr-txt">SEVERITY FILTER</span>
+<span class="tm2-shdr-txt" data-i18n="map-sev-filter">SEVERITY FILTER</span>
 </div>
 <div class="tm2-sev-list">
 <button class="tm2-sev-btn tm2-sev-on" onclick="setFilter('all',this)" data-i18n="f-all">
@@ -217,7 +217,7 @@
 </div>
 <div class="tm2-section-hdr" style="margin-top:18px">
 <span class="tm2-shdr-line"></span>
-<span class="tm2-shdr-txt">LEGEND</span>
+<span class="tm2-shdr-txt" data-i18n="map-legend">LEGEND</span>
 </div>
 <div class="tm2-legend">
 <div class="tm2-leg-row">
@@ -286,6 +286,9 @@ THREAT FEED
 </div>
 </div>
 <div class="chat-messages" id="chatMessages">
+</div>
+<div class="chat-explainer" id="chatExplainer">
+<p data-i18n="chat-explainer-text">Got a suspicious message on WhatsApp, SMS, or email? <strong>Paste it here</strong> and our AI will instantly tell you if it's a scam, explain the red flags, and advise you what to do. You can also ask questions like "Is this investment offer real?" or "Someone asked for my OTP — is that safe?"</p>
 </div>
 <div class="chat-examples" id="chatExamples">
 <button class="chat-ex-card" onclick="sendChatExample('civil')">
@@ -477,24 +480,33 @@ oninput="autoGrowChatInput(this)"></textarea>
 <span class="breach-shield-ring"></span>
 </div>
 <h2 class="tool-h2" data-i18n="breach-title">Email Breach Check</h2>
-<p class="tool-sub" data-i18n="breach-sub">Check if your email has appeared in any known data breaches.</p>
+<p class="tool-sub" data-i18n="breach-sub-full">A <strong>data breach</strong> happens when hackers steal user data (emails, passwords, personal info) from a website or company. This tool checks if your email address has been found in any of those stolen databases. If it has, attackers may already have your password — so you'll know exactly which accounts to secure.</p>
 <div class="tool-stats-row">
 <div class="tool-stat"><span class="ts-num">900+</span><span class="ts-lbl" data-i18n="breach-stat-sites">Breached Sites</span></div>
 <div class="tool-stat"><span class="ts-num">12B+</span><span class="ts-lbl" data-i18n="breach-stat-accounts">Exposed Records</span></div>
-<div class="tool-stat"><span class="ts-num" id="breachScanTotal">0</span><span class="ts-lbl">Scans</span></div>
+<div class="tool-stat"><span class="ts-num" id="breachScanTotal">0</span><span class="ts-lbl" data-i18n="breach-stat-scans">Scans</span></div>
 </div>
 </div>
 <div class="breach-main">
 <div class="breach-input-card">
-<div class="breach-input-label">📧 Enter your email address</div>
+<div class="breach-input-label" data-i18n="breach-input-lbl">📧 Enter your email address</div>
 <div class="breach-field-row">
 <input type="email" id="breachInput" class="breach-input" placeholder="your-email@example.com" autocomplete="off" spellcheck="false"
 onkeydown="if(event.key==='Enter')scanBreach()">
 <button class="breach-scan-btn" id="breachScanBtn" onclick="scanBreach()" data-i18n="breach-scan">Check</button>
 </div>
-<div class="breach-input-hint">🔒 Your email is checked securely. Nothing is stored.</div>
+<div class="breach-input-hint" data-i18n="breach-hint">🔒 Your email is checked securely. Nothing is stored.</div>
 </div>
 <div id="breachResults" class="breach-results"></div>
+<div class="protect-tips-box" id="breachProtectTips" style="display:none">
+<div class="protect-tips-title" data-i18n="tips-breach-title">🛡️ What to Do If You're Breached</div>
+<div class="protect-tips-list" id="breachTipsList">
+<div class="protect-tip-item"><span class="protect-tip-ico">1</span><span data-i18n="tips-breach-1"><strong>Change your password immediately</strong> on the breached site and anywhere else you used the same password.</span></div>
+<div class="protect-tip-item"><span class="protect-tip-ico">2</span><span data-i18n="tips-breach-2">Enable <strong>two-factor authentication (2FA)</strong> — even if someone has your password, they can't get in without the second code.</span></div>
+<div class="protect-tip-item"><span class="protect-tip-ico">3</span><span data-i18n="tips-breach-3">Watch for <strong>phishing emails</strong> — after a breach, scammers often target victims with fake "security alert" messages.</span></div>
+<div class="protect-tip-item"><span class="protect-tip-ico">4</span><span data-i18n="tips-breach-4">If banking info was exposed, <strong>contact your bank</strong> and monitor your statements for unauthorized transactions.</span></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -514,23 +526,23 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 </div>
 <div class="about-stats-bar">
 <div class="absb-item">
-<span class="absb-num">50+</span>
+<span class="absb-num" id="about-stat-reports">—</span>
 <span class="absb-lbl" data-i18n="hl-reports">Threat Reports</span>
 </div>
 <div class="absb-div"></div>
 <div class="absb-item">
-<span class="absb-num">42</span>
+<span class="absb-num" id="about-stat-scenarios">—</span>
 <span class="absb-lbl" data-i18n="hl-scenarios">Phishing Scenarios</span>
 </div>
 <div class="absb-div"></div>
 <div class="absb-item">
-<span class="absb-num">34</span>
+<span class="absb-num" id="about-stat-articles">—</span>
 <span class="absb-lbl" data-i18n="hl-articles">KB Articles</span>
 </div>
 <div class="absb-div"></div>
 <div class="absb-item">
-<span class="absb-num">100+</span>
-<span class="absb-lbl" data-i18n="hl-rules">Detection Rules</span>
+<span class="absb-num" id="about-stat-news">—</span>
+<span class="absb-lbl" data-i18n="about-stat-news-lbl">News Alerts</span>
 </div>
 <div class="absb-div"></div>
 <div class="absb-item">
@@ -551,29 +563,29 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <div class="about-section">
 <div class="about-section-hdr">
 <span class="absec-line"></span>
-<span class="absec-title">// OUR MISSION</span>
+<span class="absec-title" data-i18n="about-mission-hdr">// OUR MISSION</span>
 <span class="absec-line"></span>
 </div>
 <div class="about-mission">
 <div class="about-mission-card">
 <div class="amis-ico">🎯</div>
 <div class="amis-content">
-<div class="amis-title">Protect Kuwait</div>
-<div class="amis-desc">Empower every Kuwaiti citizen with the tools and knowledge to identify, report, and defend against cyber threats targeting our community.</div>
+<div class="amis-title" data-i18n="mission-1-title">Protect Kuwait</div>
+<div class="amis-desc" data-i18n="mission-1-desc">Empower every Kuwaiti citizen with the tools and knowledge to identify, report, and defend against cyber threats targeting our community.</div>
 </div>
 </div>
 <div class="about-mission-card">
 <div class="amis-ico">🧠</div>
 <div class="amis-content">
-<div class="amis-title">Educate &amp; Train</div>
-<div class="amis-desc">Bridge the cybersecurity awareness gap through interactive simulations, real-world scenarios, and a curated knowledge base in both Arabic and English.</div>
+<div class="amis-title" data-i18n="mission-2-title">Educate &amp; Train</div>
+<div class="amis-desc" data-i18n="mission-2-desc">Bridge the cybersecurity awareness gap through interactive simulations, real-world scenarios, and a curated knowledge base in both Arabic and English.</div>
 </div>
 </div>
 <div class="about-mission-card">
 <div class="amis-ico">🤝</div>
 <div class="amis-content">
-<div class="amis-title">Community-Driven</div>
-<div class="amis-desc">A platform built by the community, for the community. Every threat report strengthens our collective defense across all six governorates.</div>
+<div class="amis-title" data-i18n="mission-3-title">Community-Driven</div>
+<div class="amis-desc" data-i18n="mission-3-desc">A platform built by the community, for the community. Every threat report strengthens our collective defense across all six governorates.</div>
 </div>
 </div>
 </div>
@@ -581,7 +593,7 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <div class="about-section">
 <div class="about-section-hdr">
 <span class="absec-line"></span>
-<span class="absec-title">// PLATFORM MODULES</span>
+<span class="absec-title" data-i18n="about-modules-hdr">// PLATFORM MODULES</span>
 <span class="absec-line"></span>
 </div>
 <div class="about-modules">
@@ -607,7 +619,7 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <div class="amod-num">04</div>
 <div class="amod-ico">📚</div>
 <div class="amod-title" data-i18n="about-f4-title">Knowledge Base</div>
-<div class="amod-desc" data-i18n="about-f4-desc">18 cybersecurity articles covering NIST frameworks, Kuwait cybercrime law, and bank security.</div>
+<div class="amod-desc" data-i18n="about-f4-desc">Curated cybersecurity articles covering NIST frameworks, Kuwait cybercrime law, and bank security.</div>
 </div>
 <div class="amod-card">
 <div class="amod-num">05</div>
@@ -624,8 +636,8 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <div class="amod-card">
 <div class="amod-num">07</div>
 <div class="amod-ico">🔓</div>
-<div class="amod-title">CVE Vulnerability Tracker</div>
-<div class="amod-desc">Live vulnerability database powered by NVD. Search CVEs with severity explanations and recommended actions.</div>
+<div class="amod-title" data-i18n="about-cve-title">CVE Vulnerability Tracker</div>
+<div class="amod-desc" data-i18n="about-cve-desc">Live vulnerability database powered by NVD. Search CVEs with severity explanations and recommended actions.</div>
 </div>
 <div class="amod-card">
 <div class="amod-num">08</div>
@@ -638,7 +650,7 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <div class="about-section">
 <div class="about-section-hdr">
 <span class="absec-line"></span>
-<span class="absec-title">// API INTEGRATIONS</span>
+<span class="absec-title" data-i18n="about-api-hdr">// API INTEGRATIONS</span>
 <span class="absec-line"></span>
 </div>
 <div class="about-api-grid">
@@ -701,41 +713,52 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <div class="about-section">
 <div class="about-section-hdr">
 <span class="absec-line"></span>
-<span class="absec-title">// EMERGENCY CONTACTS</span>
+<span class="absec-title" data-i18n="about-emg-hdr">// EMERGENCY CONTACTS</span>
 <span class="absec-line"></span>
 </div>
 <div class="about-emergency">
 <div class="about-emg-card about-emg-primary">
 <div class="aemg-ico">🚨</div>
 <div class="aemg-info">
-<div class="aemg-title">Kuwait Cybercrime Unit</div>
-<div class="aemg-desc">Report cybercrime, fraud, hacking, and online threats</div>
+<div class="aemg-title" data-i18n="emg-1-title">Kuwait Cybercrime Unit</div>
+<div class="aemg-desc" data-i18n="emg-1-desc">Report cybercrime, fraud, hacking, and online threats</div>
 </div>
+<div class="aemg-contact">
 <div class="aemg-number">📞 1872</div>
+<a href="https://www.moi.gov.kw" target="_blank" rel="noopener noreferrer" class="aemg-link">🌐 moi.gov.kw</a>
+</div>
 </div>
 <div class="about-emg-card">
 <div class="aemg-ico">🏛️</div>
 <div class="aemg-info">
-<div class="aemg-title">CITRA (Communication &amp; IT Regulatory Authority)</div>
-<div class="aemg-desc">Telecom fraud, domain disputes, and IT regulation</div>
+<div class="aemg-title" data-i18n="emg-2-title">CITRA (Communication &amp; IT Regulatory Authority)</div>
+<div class="aemg-desc" data-i18n="emg-2-desc">Telecom fraud, domain disputes, and IT regulation</div>
 </div>
+<div class="aemg-contact">
 <div class="aemg-number">📞 102</div>
+<a href="https://www.citra.gov.kw" target="_blank" rel="noopener noreferrer" class="aemg-link">🌐 citra.gov.kw</a>
+</div>
 </div>
 <div class="about-emg-card">
 <div class="aemg-ico">🏦</div>
 <div class="aemg-info">
-<div class="aemg-title">Central Bank of Kuwait</div>
-<div class="aemg-desc">Banking fraud, unauthorized transactions, KNET scams</div>
+<div class="aemg-title" data-i18n="emg-3-title">Central Bank of Kuwait</div>
+<div class="aemg-desc" data-i18n="emg-3-desc">Banking fraud, unauthorized transactions, KNET scams</div>
 </div>
+<div class="aemg-contact">
 <div class="aemg-number">📞 22994400</div>
+<a href="https://www.cbk.gov.kw" target="_blank" rel="noopener noreferrer" class="aemg-link">🌐 cbk.gov.kw</a>
+</div>
 </div>
 <div class="about-emg-card">
 <div class="aemg-ico">🆘</div>
 <div class="aemg-info">
-<div class="aemg-title">Emergency Services</div>
-<div class="aemg-desc">Police, ambulance, and fire department</div>
+<div class="aemg-title" data-i18n="emg-4-title">Emergency Services</div>
+<div class="aemg-desc" data-i18n="emg-4-desc">Police, ambulance, and fire department</div>
 </div>
+<div class="aemg-contact">
 <div class="aemg-number">📞 112</div>
+</div>
 </div>
 </div>
 </div>
@@ -758,18 +781,18 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <span class="pc-shield">🔐</span>
 <span class="pc-shield-ring"></span>
 </div>
-<div class="tool-pretag">// PASSWORD ANALYZER</div>
-<h2 class="tool-h2">Password Strength Checker</h2>
-<p class="tool-sub">Analyze password strength in real-time. 100% local — nothing leaves your device.</p>
+<div class="tool-pretag" data-i18n="pwd-pretag">// PASSWORD ANALYZER</div>
+<h2 class="tool-h2" data-i18n="pwd-title">Password Strength Checker</h2>
+<p class="tool-sub" data-i18n="pwd-sub-full">Weak passwords are the #1 way hackers break into accounts. This tool analyzes your password against 13 security checks — including common patterns, dictionary words, and a database of billions of leaked passwords (HIBP). Everything runs locally in your browser — your password is <strong>never sent anywhere</strong>.</p>
 <div class="tool-stats-row">
-<div class="tool-stat"><span class="ts-num">13</span><span class="ts-lbl">Security Checks</span></div>
-<div class="tool-stat"><span class="ts-num">HIBP</span><span class="ts-lbl">Breach Lookup</span></div>
-<div class="tool-stat"><span class="ts-num">🔒</span><span class="ts-lbl">100% Private</span></div>
+<div class="tool-stat"><span class="ts-num">13</span><span class="ts-lbl" data-i18n="pwd-stat-checks">Security Checks</span></div>
+<div class="tool-stat"><span class="ts-num">HIBP</span><span class="ts-lbl" data-i18n="pwd-stat-breach">Breach Lookup</span></div>
+<div class="tool-stat"><span class="ts-num">🔒</span><span class="ts-lbl" data-i18n="pwd-stat-private">100% Private</span></div>
 </div>
 </div>
 <div class="pc-main">
 <div class="pc-input-card">
-<div class="pc-input-label">🔑 Enter your password</div>
+<div class="pc-input-label" data-i18n="pwd-input-lbl">🔑 Enter your password</div>
 <div class="pc-field-row">
 <input type="password" id="pwdInput" class="pc-input" placeholder="Type or paste a password…" oninput="checkPassword()" autocomplete="new-password" spellcheck="false">
 <button class="pc-toggle" id="pwdEye" onclick="togglePwdVis()">
@@ -796,23 +819,32 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <div class="pc-stats-row">
 <div class="pc-stat">
 <div class="pc-stat-val" id="pwd2CrackTime">—</div>
-<div class="pc-stat-lbl">Crack Time</div>
+<div class="pc-stat-lbl" data-i18n="pwd-crack-time">Crack Time</div>
 </div>
 <div class="pc-stat">
 <div class="pc-stat-val" id="pwd2Entropy">—</div>
-<div class="pc-stat-lbl">Entropy</div>
+<div class="pc-stat-lbl" data-i18n="pwd-entropy">Entropy</div>
 </div>
 <div class="pc-stat">
 <div class="pc-stat-val" id="pwd2Length">—</div>
-<div class="pc-stat-lbl">Length</div>
+<div class="pc-stat-lbl" data-i18n="pwd-length">Length</div>
 </div>
 <div class="pc-stat">
 <div class="pc-stat-val" id="pcComposition">—</div>
-<div class="pc-stat-lbl">Composition</div>
+<div class="pc-stat-lbl" data-i18n="pwd-composition">Composition</div>
 </div>
 </div>
 <div class="pc-checks" id="pcChecks"></div>
 <button class="pc-gen-btn" onclick="generatePassword()">⚡ Generate Strong Password</button>
+<div class="protect-tips-box" id="pwdProtectTips" style="display:none">
+<div class="protect-tips-title" data-i18n="tips-pwd-title">🛡️ How to Protect Your Accounts</div>
+<div class="protect-tips-list">
+<div class="protect-tip-item"><span class="protect-tip-ico">1</span><span data-i18n="tips-pwd-1">Use a <strong>different password</strong> for every account — if one gets leaked, the rest stay safe.</span></div>
+<div class="protect-tip-item"><span class="protect-tip-ico">2</span><span data-i18n="tips-pwd-2">Enable <strong>two-factor authentication (2FA)</strong> on all important accounts — email, banking, social media.</span></div>
+<div class="protect-tip-item"><span class="protect-tip-ico">3</span><span data-i18n="tips-pwd-3">Use a <strong>password manager</strong> (like Bitwarden or 1Password) so you don't have to remember complex passwords.</span></div>
+<div class="protect-tip-item"><span class="protect-tip-ico">4</span><span data-i18n="tips-pwd-4">Never share your password or OTP with anyone — not even if they claim to be from your bank or the government.</span></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -820,9 +852,9 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <div class="page" id="page-link">
 <div class="link-page">
 <div class="link-hero">
-<div class="tool-pretag">// PHISHING URL ANALYZER</div>
+<div class="tool-pretag" data-i18n="link-pretag">// PHISHING URL ANALYZER</div>
 <h2 class="tool-h2" data-i18n="link-title">URL Deep Analysis</h2>
-<p class="tool-sub" data-i18n="link-sub">Paste any URL for phishing detection, WHOIS lookup, malware feed check, and SSL intelligence.</p>
+<p class="tool-sub" data-i18n="link-sub">Not sure if a link is safe? Paste it here and we'll scan it against multiple security databases to check for phishing, malware, and fraud. We also look up who owns the domain and when it was created — scam sites are almost always brand new.</p>
 <div class="link-hero-badges">
 <span class="lhb">🔬 10-Point Heuristic</span>
 <span class="lhb">🌐 WHOIS / RDAP</span>
@@ -837,10 +869,10 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <button class="link-scan-btn" onclick="scanLink()">Analyze →</button>
 </div>
 <div class="link-examples">
-<span class="link-ex-lbl">Try:</span>
-<span class="link-ex-item" onclick="setLinkEx(this)" data-url="http://g00gle-secure.xyz/login?redirect=gmail">Lookalike domain</span>
-<span class="link-ex-item" onclick="setLinkEx(this)" data-url="https://knet.com.kw/payment">Legitimate URL</span>
-<span class="link-ex-item" onclick="setLinkEx(this)" data-url="http://192.168.1.1/banking/verify">IP address</span>
+<span class="link-ex-lbl" data-i18n="link-try-lbl">Try:</span>
+<span class="link-ex-item" onclick="setLinkEx(this)" data-url="http://g00gle-secure.xyz/login?redirect=gmail" data-i18n="link-ex-1">Lookalike domain</span>
+<span class="link-ex-item" onclick="setLinkEx(this)" data-url="https://knet.com.kw/payment" data-i18n="link-ex-2">Legitimate URL</span>
+<span class="link-ex-item" onclick="setLinkEx(this)" data-url="http://192.168.1.1/banking/verify" data-i18n="link-ex-3">IP address</span>
 </div>
 </div>
 <div id="linkResults" class="link-results" style="display:none"></div>
@@ -850,16 +882,16 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <div class="page" id="page-cve">
 <div class="cve-page">
 <div class="cve-hero">
-<div class="tool-pretag">// LIVE CVE TRACKER</div>
-<h2 class="tool-h2">Vulnerability Intelligence</h2>
-<p class="tool-sub">Real-time CVEs from the NVD database affecting software widely used in Kuwait. No API key required.</p>
+<div class="tool-pretag" data-i18n="cve-pretag">// LIVE CVE TRACKER</div>
+<h2 class="tool-h2" data-i18n="cve-h2">Vulnerability Intelligence</h2>
+<p class="tool-sub" data-i18n="cve-sub">CVE stands for <strong>Common Vulnerabilities and Exposures</strong> — a public list of known security flaws in software. This tool pulls the latest vulnerability reports from the U.S. National Vulnerability Database (NVD) and filters them for apps and systems commonly used in Kuwait. Use it to check if software you rely on — like Windows, Chrome, or WhatsApp — has any newly discovered security issues, so you can update or take action before attackers exploit them.</p>
 <div class="cve-hero-meta">
 <div class="news-live-pill"><span class="news-live-dot"></span>NVD LIVE</div>
 <div id="cveLastUpdate" class="cve-last-update">—</div>
 </div>
 </div>
 <div class="cve-filter-bar">
-<div class="cve-filter-label">PRODUCT</div>
+<div class="cve-filter-label" data-i18n="cve-filter-lbl">PRODUCT</div>
 <div class="cve-chips" id="cveChips">
 <button class="cve-chip active" onclick="setCVEFilter('Windows',this)">Windows</button>
 <button class="cve-chip" onclick="setCVEFilter('Android',this)">Android</button>
@@ -872,7 +904,7 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <button class="cve-chip" onclick="setCVEFilter('VPN',this)">VPN</button>
 <button class="cve-chip" onclick="setCVEFilter('Telegram',this)">Telegram</button>
 </div>
-<button class="cve-refresh-btn" onclick="fetchCVEs()">↻ Refresh</button>
+<button class="cve-refresh-btn" onclick="fetchCVEs()" data-i18n="cve-refresh">↻ Refresh</button>
 </div>
 <div class="cve-stats-bar" id="cveStatsBar" style="display:none">
 <div class="cve-stat cve-stat-crit">
@@ -902,6 +934,15 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <div class="cve-load-text">Click a product chip above or switch to this tab to load CVEs…</div>
 </div>
 </div>
+<div class="protect-tips-box" id="cveProtectTips" style="display:none">
+<div class="protect-tips-title" data-i18n="tips-cve-title">🛡️ How to Protect Yourself</div>
+<div class="protect-tips-list">
+<div class="protect-tip-item"><span class="protect-tip-ico">1</span><span data-i18n="tips-cve-1">Always install software updates as soon as they're available — most patches fix known vulnerabilities listed here.</span></div>
+<div class="protect-tip-item"><span class="protect-tip-ico">2</span><span data-i18n="tips-cve-2">Turn on <strong>automatic updates</strong> for your OS, browser, and apps so you're never running a vulnerable version.</span></div>
+<div class="protect-tip-item"><span class="protect-tip-ico">3</span><span data-i18n="tips-cve-3">If a CVE is marked <strong>"Actively Exploited"</strong>, treat it as urgent — update immediately or stop using that software until a fix is available.</span></div>
+<div class="protect-tip-item"><span class="protect-tip-ico">4</span><span data-i18n="tips-cve-4">Don't ignore "Medium" or "Low" severity — attackers often chain multiple smaller vulnerabilities together.</span></div>
+</div>
+</div>
 </div>
 </div>
 <div class="page" id="page-news">
@@ -909,7 +950,7 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <div class="news-hero">
 <div class="tool-pretag">// LIVE INTELLIGENCE FEED</div>
 <h2 class="tool-h2">Kuwait Scam News</h2>
-<p class="tool-sub">Real-time cybersecurity alerts, official government warnings, and threat intelligence targeting Kuwait.</p>
+<p class="tool-sub" data-i18n="news-sub-full">Stay informed about the latest scams and cyber threats in Kuwait. This feed collects official warnings from CITRA, the Central Bank, and MOI, plus global threat intelligence — so you know what scams are active right now and how to avoid them.</p>
 <div class="news-hero-meta">
 <div class="news-live-pill"><span class="news-live-dot"></span>LIVE</div>
 <div class="news-src-strip">
