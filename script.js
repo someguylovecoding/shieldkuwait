@@ -783,6 +783,123 @@ ar: 'الأفضل:'
 'tab-phone': { en: 'Phone Check', ar: 'فحص الرقم' },
 'tab-enc': { en: 'Encyclopedia', ar: 'الموسوعة' },
 'tab-pg': { en: 'Parent Guide', ar: 'دليل الأهل' },
+
+/* ── New content Arabic translations ── */
+'chat-explainer-text': {
+  en: 'Got a suspicious message on WhatsApp, SMS, or email? Paste it here and our AI will instantly tell you if it\'s a scam, explain the red flags, and advise you what to do. You can also ask questions like "Is this investment offer real?" or "Someone asked for my OTP — is that safe?"',
+  ar: 'وصلتك رسالة مشبوهة على واتساب أو SMS أو الإيميل؟ الصقها هنا وسيخبرك الذكاء الاصطناعي فوراً إذا كانت نصبة، يشرح علامات الخطر، ويرشدك لما تفعله. يمكنك أيضاً أن تسأل مثل "هل هذا العرض الاستثماري حقيقي؟" أو "طلبوا مني رمز OTP — هل هذا آمن؟"'
+},
+'breach-sub-full': {
+  en: 'A data breach happens when hackers steal user data (emails, passwords, personal info) from a website or company. This tool checks if your email address has been found in any of those stolen databases. If it has, attackers may already have your password — so you\'ll know exactly which accounts to secure.',
+  ar: 'تسريب البيانات يحدث عندما يسرق القراصنة بيانات المستخدمين (إيميلات، كلمات مرور، معلومات شخصية) من موقع أو شركة. هذه الأداة تتحقق إذا ظهر إيميلك في أي من تلك القواعد المسروقة. إذا ظهر، فالمهاجمون قد يملكون كلمة مرورك — ستعرف بالضبط أي الحسابات تحتاج تأمين.'
+},
+'breach-stat-scans': { en: 'Scans', ar: 'عمليات فحص' },
+'breach-input-lbl': { en: '📧 Enter your email address', ar: '📧 أدخل عنوان بريدك الإلكتروني' },
+'breach-hint': { en: '🔒 Your email is checked securely. Nothing is stored.', ar: '🔒 يتم فحص إيميلك بأمان. لا يتم تخزين أي شيء.' },
+'tips-breach-title': { en: '🛡️ What to Do If You\'re Breached', ar: '🛡️ ماذا تفعل إذا تعرضت لتسريب' },
+'tips-breach-1': { en: 'Change your password immediately on the breached site and anywhere else you used the same password.', ar: 'غيّر كلمة مرورك فوراً على الموقع المخترق وفي كل مكان استخدمت فيه نفس كلمة المرور.' },
+'tips-breach-2': { en: 'Enable two-factor authentication (2FA) — even if someone has your password, they can\'t get in without the second code.', ar: 'فعّل التحقق بخطوتين (2FA) — حتى لو عنده كلمة مرورك، لن يستطيع الدخول بدون الرمز الثاني.' },
+'tips-breach-3': { en: 'Watch for phishing emails — after a breach, scammers often target victims with fake "security alert" messages.', ar: 'انتبه لإيميلات التصيد — بعد التسريب، المحتالون كثيراً ما يستهدفون الضحايا برسائل تنبيه أمني مزيفة.' },
+'tips-breach-4': { en: 'If banking info was exposed, contact your bank and monitor your statements for unauthorized transactions.', ar: 'إذا تعرضت معلوماتك البنكية للخطر، تواصل مع بنكك وراقب كشف حسابك بحثاً عن معاملات غير مصرح بها.' },
+'pwd-pretag': { en: '// PASSWORD ANALYZER', ar: '// محلل كلمات المرور' },
+'pwd-sub-full': {
+  en: 'Weak passwords are the #1 way hackers break into accounts. This tool analyzes your password against 13 security checks — including common patterns, dictionary words, and a database of billions of leaked passwords (HIBP). Everything runs locally in your browser — your password is never sent anywhere.',
+  ar: 'كلمات المرور الضعيفة هي الطريقة الأولى التي يخترق بها القراصنة الحسابات. هذه الأداة تحلل كلمة مرورك ضد 13 فحصاً أمنياً — بما يشمل الأنماط الشائعة والكلمات القاموسية وقاعدة بيانات مليارات كلمات المرور المسربة (HIBP). كل شيء يعمل محلياً في متصفحك — كلمة مرورك لا تُرسل لأي مكان.'
+},
+'pwd-stat-checks': { en: 'Security Checks', ar: 'فحص أمني' },
+'pwd-stat-breach': { en: 'Breach Lookup', ar: 'فحص التسريبات' },
+'pwd-stat-private': { en: '100% Private', ar: '100% خاص' },
+'pwd-input-lbl': { en: '🔑 Enter your password', ar: '🔑 أدخل كلمة مرورك' },
+'tips-pwd-title': { en: '🛡️ How to Protect Your Accounts', ar: '🛡️ كيف تحمي حساباتك' },
+'tips-pwd-1': { en: 'Use a different password for every account — if one gets leaked, the rest stay safe.', ar: 'استخدم كلمة مرور مختلفة لكل حساب — إذا تسرب واحد، الباقي يبقى آمناً.' },
+'tips-pwd-2': { en: 'Enable two-factor authentication (2FA) on all important accounts — email, banking, social media.', ar: 'فعّل التحقق بخطوتين (2FA) على جميع حساباتك المهمة — الإيميل والبنك والسوشيال ميديا.' },
+'tips-pwd-3': { en: 'Use a password manager (like Bitwarden or 1Password) so you don\'t have to remember complex passwords.', ar: 'استخدم مدير كلمات مرور (مثل Bitwarden أو 1Password) حتى لا تضطر لحفظ كلمات مرور معقدة.' },
+'tips-pwd-4': { en: 'Never share your password or OTP with anyone — not even if they claim to be from your bank or the government.', ar: 'لا تشارك كلمة مرورك أو رمز OTP مع أي شخص — حتى لو ادّعى أنه من بنكك أو الحكومة.' },
+'cve-pretag': { en: '// LIVE CVE TRACKER', ar: '// متتبع الثغرات المباشر' },
+'cve-h2': { en: 'Vulnerability Intelligence', ar: 'استخبارات الثغرات الأمنية' },
+'cve-sub': {
+  en: 'CVE stands for Common Vulnerabilities and Exposures — a public list of known security flaws in software. This tool pulls the latest vulnerability reports from the U.S. National Vulnerability Database (NVD) and filters them for apps and systems commonly used in Kuwait. Use it to check if software you rely on — like Windows, Chrome, or WhatsApp — has any newly discovered security issues, so you can update or take action before attackers exploit them.',
+  ar: 'CVE اختصار لـ Common Vulnerabilities and Exposures — قائمة عامة بالثغرات الأمنية المعروفة في البرامج. هذه الأداة تسحب أحدث تقارير الثغرات من قاعدة بيانات NVD الأمريكية وتصفيها للتطبيقات والأنظمة الشائعة في الكويت. استخدمها للتحقق إذا كان البرنامج الذي تستخدمه — مثل ويندوز أو كروم أو واتساب — يحتوي على ثغرات مكتشفة حديثاً، حتى تحدّث أو تتخذ إجراء قبل أن يستغلها المهاجمون.'
+},
+'cve-filter-lbl': { en: 'PRODUCT', ar: 'المنتج' },
+'cve-refresh': { en: '↻ Refresh', ar: '↻ تحديث' },
+'tips-cve-title': { en: '🛡️ How to Protect Yourself', ar: '🛡️ كيف تحمي نفسك' },
+'tips-cve-1': { en: 'Always install software updates as soon as they\'re available — most patches fix known vulnerabilities listed here.', ar: 'دائماً ثبّت تحديثات البرامج فور توفرها — معظم التصحيحات تُصلح الثغرات المعروفة المدرجة هنا.' },
+'tips-cve-2': { en: 'Turn on automatic updates for your OS, browser, and apps so you\'re never running a vulnerable version.', ar: 'فعّل التحديثات التلقائية لنظام التشغيل والمتصفح والتطبيقات حتى لا تشغّل نسخة مكشوفة للخطر.' },
+'tips-cve-3': { en: 'If a CVE is marked "Actively Exploited", treat it as urgent — update immediately or stop using that software until a fix is available.', ar: 'إذا كانت الثغرة مصنّفة "قيد الاستغلال النشط"، تعامل معها كأمر عاجل — حدّث فوراً أو توقف عن استخدام ذلك البرنامج حتى يتوفر الإصلاح.' },
+'tips-cve-4': { en: 'Don\'t ignore "Medium" or "Low" severity — attackers often chain multiple smaller vulnerabilities together.', ar: 'لا تتجاهل الثغرات "المتوسطة" أو "المنخفضة" الخطورة — المهاجمون كثيراً ما يجمعون عدة ثغرات صغيرة معاً.' },
+'news-sub-full': {
+  en: 'Stay informed about the latest scams and cyber threats in Kuwait. This feed collects official warnings from CITRA, the Central Bank, and MOI, plus global threat intelligence — so you know what scams are active right now and how to avoid them.',
+  ar: 'ابقَ على اطلاع بأحدث عمليات النصب والتهديدات الإلكترونية في الكويت. هذه التغذية تجمع التحذيرات الرسمية من CITRA والبنك المركزي ووزارة الداخلية، إضافة إلى استخبارات التهديدات العالمية — حتى تعرف ما هي النصبات النشطة الآن وكيف تتجنبها.'
+},
+'link-pretag': { en: '// PHISHING URL ANALYZER', ar: '// محلل روابط التصيد' },
+'link-try-lbl': { en: 'Try:', ar: 'جرّب:' },
+'link-ex-1': { en: 'Lookalike domain', ar: 'نطاق مزيف مشابه' },
+'link-ex-2': { en: 'Legitimate URL', ar: 'رابط شرعي' },
+'link-ex-3': { en: 'IP address', ar: 'عنوان IP' },
+'about-mission-hdr': { en: '// OUR MISSION', ar: '// مهمتنا' },
+'mission-1-title': { en: 'Protect Kuwait', ar: 'حماية الكويت' },
+'mission-1-desc': { en: 'Empower every Kuwaiti citizen with the tools and knowledge to identify, report, and defend against cyber threats targeting our community.', ar: 'تمكين كل مواطن كويتي بالأدوات والمعرفة لتحديد التهديدات الإلكترونية التي تستهدف مجتمعنا والإبلاغ عنها والدفاع ضدها.' },
+'mission-2-title': { en: 'Educate & Train', ar: 'التعليم والتدريب' },
+'mission-2-desc': { en: 'Bridge the cybersecurity awareness gap through interactive simulations, real-world scenarios, and a curated knowledge base in both Arabic and English.', ar: 'سد فجوة الوعي بالأمن السيبراني من خلال المحاكاة التفاعلية والسيناريوهات الواقعية وقاعدة معرفة منتقاة باللغتين العربية والإنجليزية.' },
+'mission-3-title': { en: 'Community-Driven', ar: 'مجتمعي المنشأ' },
+'mission-3-desc': { en: 'A platform built by the community, for the community. Every threat report strengthens our collective defense across all six governorates.', ar: 'منصة بُنيت من المجتمع وللمجتمع. كل بلاغ تهديد يعزز دفاعنا الجماعي عبر المحافظات الست.' },
+'about-modules-hdr': { en: '// PLATFORM MODULES', ar: '// وحدات المنصة' },
+'about-cve-title': { en: 'CVE Vulnerability Tracker', ar: 'متتبع ثغرات CVE' },
+'about-cve-desc': { en: 'Live vulnerability database powered by NVD. Search CVEs with severity explanations and recommended actions.', ar: 'قاعدة بيانات ثغرات حية مدعومة بـ NVD. ابحث عن ثغرات CVE مع شرح الخطورة والإجراءات الموصى بها.' },
+'about-api-hdr': { en: '// API INTEGRATIONS', ar: '// تكاملات الـ API' },
+'about-emg-hdr': { en: '// EMERGENCY CONTACTS', ar: '// جهات الاتصال في حالات الطوارئ' },
+'emg-1-title': { en: 'Kuwait Cybercrime Unit', ar: 'وحدة الجرائم الإلكترونية الكويتية' },
+'emg-1-desc': { en: 'Report cybercrime, fraud, hacking, and online threats', ar: 'أبلغ عن الجرائم الإلكترونية والاحتيال والاختراق والتهديدات الرقمية' },
+'emg-2-title': { en: 'CITRA (Communication & IT Regulatory Authority)', ar: 'هيئة تنظيم الاتصالات وتقنية المعلومات (CITRA)' },
+'emg-2-desc': { en: 'Telecom fraud, domain disputes, and IT regulation', ar: 'الاحتيال في الاتصالات ونزاعات النطاقات وتنظيم تقنية المعلومات' },
+'emg-3-title': { en: 'Central Bank of Kuwait', ar: 'بنك الكويت المركزي' },
+'emg-3-desc': { en: 'Banking fraud, unauthorized transactions, KNET scams', ar: 'الاحتيال المصرفي والمعاملات غير المصرح بها وعمليات نصب KNET' },
+'emg-4-title': { en: 'Emergency Services', ar: 'خدمات الطوارئ' },
+'emg-4-desc': { en: 'Police, ambulance, and fire department', ar: 'الشرطة والإسعاف والإطفاء' },
+'about-stat-news-lbl': { en: 'News Alerts', ar: 'تنبيهات إخبارية' },
+'about-pretag': { en: '// PLATFORM OVERVIEW', ar: '// نظرة عامة على المنصة' },
+'link-domain-intel': { en: 'DOMAIN INTELLIGENCE — WHOIS · MALWARE FEEDS', ar: 'استخبارات النطاق — WHOIS · تغذيات البرمجيات الخبيثة' },
+'link-whois-rdap': { en: 'WHOIS / RDAP', ar: 'WHOIS / RDAP' },
+'link-urlhaus': { en: 'URLhaus Malware Feed', ar: 'تغذية البرمجيات الخبيثة URLhaus' },
+'link-limited-data': { en: 'Limited data available', ar: 'بيانات محدودة متاحة' },
+'link-unavail-tld': { en: 'Unavailable for this TLD', ar: 'غير متاح لهذا النطاق العلوي' },
+'link-svc-unavail': { en: 'Service unavailable', ar: 'الخدمة غير متاحة' },
+'link-not-malware': { en: 'Not in malware database', ar: 'غير موجود في قاعدة بيانات البرمجيات الخبيثة' },
+'link-engines-flagged': { en: 'engines flagged', ar: 'محرك رصده' },
+'link-clean': { en: 'clean', ar: 'نظيف' },
+'link-not-found-db': { en: 'Not found in database', ar: 'غير موجود في قاعدة البيانات' },
+'link-not-phishing': { en: 'Not phishing', ar: 'ليس تصيداً' },
+'link-confirmed-phish': { en: 'Confirmed phishing', ar: 'تصيد مؤكد' },
+'link-new-domain': { en: 'NEW DOMAIN', ar: 'نطاق جديد' },
+'link-registered': { en: 'Registered', ar: 'تاريخ التسجيل' },
+'link-domain-age': { en: 'Domain Age', ar: 'عمر النطاق' },
+'link-last-updated': { en: 'Last Updated', ar: 'آخر تحديث' },
+'link-registrar': { en: 'Registrar', ar: 'المسجِّل' },
+'link-status': { en: 'Status', ar: 'الحالة' },
+'link-feed-status': { en: 'Feed Status', ar: 'حالة التغذية' },
+'link-tags': { en: 'Tags', ar: 'الوسوم' },
+'link-added': { en: 'Added', ar: 'تمت الإضافة' },
+'link-report': { en: 'Report', ar: 'التقرير' },
+'link-listed': { en: 'LISTED', ar: 'مدرج' },
+'link-not-phish-db': { en: 'Not phishing', ar: 'ليس تصيداً' },
+'phone-invalid-num': { en: 'Invalid Number', ar: 'رقم غير صالح' },
+'phone-invalid-desc': { en: 'Please enter an 8-digit Kuwait number without the +965 prefix.', ar: 'يرجى إدخال رقم كويتي مكون من 8 أرقام بدون البادئة +965.' },
+'phone-scanning': { en: 'Scanning databases…', ar: 'جاري فحص قواعد البيانات…' },
+'phone-no-reports': { en: 'No reports found for this number. This does not guarantee safety — new scam numbers appear daily. If you received a suspicious call, report it below.', ar: 'لم يُعثر على بلاغات لهذا الرقم. هذا لا يضمن السلامة — تظهر أرقام نصب جديدة يومياً. إذا تلقيت مكالمة مشبوهة، أبلغ عنها أدناه.' },
+'phone-community-empty': { en: 'No community reports yet. Be the first to report a scam number.', ar: 'لا توجد بلاغات مجتمعية بعد. كن أول من يبلغ عن رقم نصب.' },
+'news-no-results': { en: 'No results found for your search.', ar: 'لم يتم العثور على نتائج لبحثك.' },
+'alerts-fetching': { en: 'Fetching live threat intelligence from abuse.ch…', ar: 'جاري جلب معلومات التهديدات الحية من abuse.ch…' },
+'enc-no-scam': { en: 'No scam types found matching your search.', ar: 'لم يُعثر على أنواع نصب تطابق بحثك.' },
+'link-scanning': { en: 'Scanning...', ar: 'جاري الفحص...' },
+'link-risk-score': { en: 'Risk Score', ar: 'درجة الخطر' },
+'link-live-api': { en: 'Live API Scanning — checking...', ar: 'فحص APIs الحية — جاري التحقق...' },
+'link-threats-found': { en: 'APIs detected threats', ar: 'APIs رصدت تهديدات' },
+'link-no-threats': { en: 'No threats detected across', ar: 'لم تُرصد تهديدات من' },
+'link-no-keys': { en: 'No API keys — add keys for advanced scanning', ar: 'لا مفاتيح API — أضف مفاتيح لفحص متقدم' },
+'link-add-key': { en: 'Add API key', ar: 'أضف مفتاح API' },
+'link-api-settings': { en: 'API Settings', ar: 'إعدادات API' },
+'link-suspicious': { en: 'Suspicious', ar: 'مشبوه' },
 };
 function t(key) {
 return (I18N[key] && I18N[key][LANG]) || key;
@@ -853,11 +970,23 @@ if (fArea && fArea.options[0]) {
 fArea.options[0].text = t('area-select-ph');
 }
 }
+var HTML_I18N_KEYS = {
+'chat-explainer-text':1,'breach-sub-full':1,'breach-hint':1,'breach-input-lbl':1,
+'tips-breach-title':1,'tips-breach-1':1,'tips-breach-2':1,'tips-breach-3':1,'tips-breach-4':1,
+'pwd-sub-full':1,'pwd-input-lbl':1,
+'tips-pwd-title':1,'tips-pwd-1':1,'tips-pwd-2':1,'tips-pwd-3':1,'tips-pwd-4':1,
+'cve-sub':1,'tips-cve-title':1,'tips-cve-1':1,'tips-cve-2':1,'tips-cve-3':1,'tips-cve-4':1
+};
 function applyLang() {
 document.querySelectorAll('[data-i18n]').forEach(function(el) {
 var key = el.getAttribute('data-i18n');
-if (I18N[key])
+if (I18N[key]) {
+if (HTML_I18N_KEYS[key]) {
+el.innerHTML = I18N[key][LANG];
+} else {
 el.textContent = I18N[key][LANG];
+}
+}
 });
 document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
 var key = el.getAttribute('data-i18n-placeholder');
@@ -2453,7 +2582,7 @@ var srcTag = r.userSubmitted ? '<span class="rsrc-live">▶ LIVE</span>' : '<spa
 var sevLabel = SEV_DISPLAY[r.sev] ? (SEV_DISPLAY[r.sev][LANG] || r.sev) : r.sev;
 h += '<div class="rcard ' + (SK[r.sev] || '') + '" id="card-' + r.id + '" onclick="highlightCard(' + r.id + ')">' + '<div class="rcard-stripe"></div>' + '<div class="rcard-inner">' + '<div class="rcard-row1">' + '<span class="rsev-pill ' + (BK[r.sev] || 'bm') + '">' + sevLabel + '</span>' + srcTag + '</div>' + '<div class="rcard-title">' + esc(rt(r.title)) + '</div>' + '<div class="rcard-row2">' + '<span class="rcard-loc">📍 ' + esc(r.area) + '</span>' + '<span class="rcard-type-chip">' + esc(rt(r.type)) + '</span>' + '</div>' + '</div>' + '</div>';
 });
-document.getElementById('reportList').innerHTML = h || '<div style="padding:16px;text-align:center;font-size:0.7rem;color:var(--muted2)">No reports.</div>';
+document.getElementById('reportList').innerHTML = h || '<div style="padding:16px;text-align:center;font-size:0.7rem;color:var(--muted2)">' + t('no-reports') + '</div>';
 }
 var TYPE_COLORS = {
 'Phishing': '#ff3c5a',
@@ -3162,6 +3291,9 @@ autoGrowChatInput(input);
 var exs = document.getElementById('chatExamples');
 if (exs)
 exs.style.display = 'none';
+var chatExp = document.getElementById('chatExplainer');
+if (chatExp)
+chatExp.style.display = 'none';
 addChatBubble('user', msg);
 _chatBusy = true;
 var sendBtn = document.getElementById('chatSendBtn');
@@ -6390,6 +6522,8 @@ return;
 results.style.display = 'flex';
 if (emptyState) emptyState.style.display = 'none';
 if (verdictRow) verdictRow.style.display = '';
+var pwdTips = document.getElementById('pwdProtectTips');
+if (pwdTips) pwdTips.style.display = '';
 var pwdLower = pwd.toLowerCase();
 var pwdStripped = pwdLower.replace(/[^a-z]/g, '');
 var hasSeqNum = SEQUENTIAL_NUMS.some(function(s) {
@@ -7058,6 +7192,8 @@ return '<div class="cve-card ' + sevCls + '">' +
 '</div>';
 }).join('');
 results.innerHTML = '<div class="cve-cards-wrap">' + cards + '</div>';
+var cveTips = document.getElementById('cveProtectTips');
+if (cveTips) cveTips.style.display = '';
 if (statsBar) {
 statsBar.style.display = 'flex';
 document.getElementById('cveSCrit').textContent = counts.CRITICAL;
@@ -7342,15 +7478,15 @@ return '<div class="lr-check-item ' + cls + '">' + '<span class="lrc-ico">' + ic
 }).join('');
 var domainIntelHTML =
 '<div class="lr-domain-section">' +
-'<div class="lr-ds-header"><span class="lr-ds-ico">🌐</span><span class="lr-ds-title">DOMAIN INTELLIGENCE — WHOIS · MALWARE FEEDS</span></div>' +
+'<div class="lr-ds-header"><span class="lr-ds-ico">🌐</span><span class="lr-ds-title">' + t('link-domain-intel') + '</span></div>' +
 '<div class="lr-ds-grid">' +
 '<div class="lr-ds-block lr-ds-loading" id="ldsRDAP">' +
-'<div class="lds-label">WHOIS / RDAP</div>' +
-'<div class="lds-row"><span class="lds-key">Status</span><span class="lds-v lds-na">Querying…</span></div>' +
+'<div class="lds-label">' + t('link-whois-rdap') + '</div>' +
+'<div class="lds-row"><span class="lds-key">' + t('link-status') + '</span><span class="lds-v lds-na">' + t('link-scanning') + '</span></div>' +
 '</div>' +
 '<div class="lr-ds-block lr-ds-loading" id="ldsURLhaus">' +
-'<div class="lds-label">URLhaus Malware Feed</div>' +
-'<div class="lds-row"><span class="lds-key">Status</span><span class="lds-v lds-na">Checking…</span></div>' +
+'<div class="lds-label">' + t('link-urlhaus') + '</div>' +
+'<div class="lds-row"><span class="lds-key">' + t('link-status') + '</span><span class="lds-v lds-na">' + t('link-scanning') + '</span></div>' +
 '</div>' +
 '</div>' +
 '</div>';
@@ -7361,18 +7497,18 @@ res.innerHTML =
 '<div class="lrv-body">' +
 '<div class="lrv-label">' + rt(verdict) + '</div>' +
 '<div class="lrv-domain">' + hostname + '</div>' +
-'<div class="lrv-score">' + (LANG === 'ar' ? 'درجة الخطر' : 'Risk Score') + ': ' + riskScore + '/100</div>' +
+'<div class="lrv-score">' + t('link-risk-score') + ': ' + riskScore + '/100</div>' +
 '</div>' +
 '</div>' +
 '<div class="lr-checks">' + checksHTML + '</div>' +
 '<div class="lr-api-section" id="linkApiSection">' +
-'<div class="lr-api-header"><span class="lr-api-ico">🔬</span><span class="lr-api-title">' + (LANG === 'ar' ? 'فحص APIs الحية — جاري التحقق...' : 'Live API Scanning — checking...') + '</span></div>' +
+'<div class="lr-api-header"><span class="lr-api-ico">🔬</span><span class="lr-api-title">' + t('link-live-api') + '</span></div>' +
 '<div class="lr-api-grid" id="linkApiGrid">' +
-'<div class="lr-api-item lr-api-loading"><span class="apid-ico">⏳</span><span class="apid-api">URLScan.io</span><span class="apid-detail">' + (LANG === 'ar' ? 'جاري الفحص...' : 'Scanning...') + '</span></div>' +
-'<div class="lr-api-item lr-api-loading"><span class="apid-ico">⏳</span><span class="apid-api">VirusTotal</span><span class="apid-detail">' + (LANG === 'ar' ? 'جاري الفحص...' : 'Scanning...') + '</span></div>' +
-'<div class="lr-api-item lr-api-loading"><span class="apid-ico">⏳</span><span class="apid-api">Google Safe Browsing</span><span class="apid-detail">' + (LANG === 'ar' ? 'جاري الفحص...' : 'Scanning...') + '</span></div>' +
-'<div class="lr-api-item lr-api-loading"><span class="apid-ico">⏳</span><span class="apid-api">PhishTank</span><span class="apid-detail">' + (LANG === 'ar' ? 'جاري الفحص...' : 'Scanning...') + '</span></div>' +
-'<div class="lr-api-item lr-api-loading"><span class="apid-ico">⏳</span><span class="apid-api">IPQualityScore</span><span class="apid-detail">' + (LANG === 'ar' ? 'جاري الفحص...' : 'Scanning...') + '</span></div>' +
+'<div class="lr-api-item lr-api-loading"><span class="apid-ico">⏳</span><span class="apid-api">URLScan.io</span><span class="apid-detail">' + t('link-scanning') + '</span></div>' +
+'<div class="lr-api-item lr-api-loading"><span class="apid-ico">⏳</span><span class="apid-api">VirusTotal</span><span class="apid-detail">' + t('link-scanning') + '</span></div>' +
+'<div class="lr-api-item lr-api-loading"><span class="apid-ico">⏳</span><span class="apid-api">Google Safe Browsing</span><span class="apid-detail">' + t('link-scanning') + '</span></div>' +
+'<div class="lr-api-item lr-api-loading"><span class="apid-ico">⏳</span><span class="apid-api">PhishTank</span><span class="apid-detail">' + t('link-scanning') + '</span></div>' +
+'<div class="lr-api-item lr-api-loading"><span class="apid-ico">⏳</span><span class="apid-api">IPQualityScore</span><span class="apid-detail">' + t('link-scanning') + '</span></div>' +
 '</div>' +
 '</div>' +
 domainIntelHTML;
@@ -7393,17 +7529,17 @@ apiChecked++;
 if (apiResults[0].malicious > 0) {
 threatsFound++;
 items[0].className = 'lr-api-item apid-mal';
-items[0].innerHTML = '<span class="apid-ico">✗</span><span class="apid-api">URLScan.io</span><span class="apid-detail">' + apiResults[0].malicious + ' malicious verdicts</span>';
+items[0].innerHTML = '<span class="apid-ico">✗</span><span class="apid-api">URLScan.io</span><span class="apid-detail">' + apiResults[0].malicious + ' ' + t('link-mal-verdicts') + '</span>';
 } else if (apiResults[0].found) {
 items[0].className = 'lr-api-item apid-seen';
-items[0].innerHTML = '<span class="apid-ico">•</span><span class="apid-api">URLScan.io</span><span class="apid-detail">' + apiResults[0].total + ' records found</span>';
+items[0].innerHTML = '<span class="apid-ico">•</span><span class="apid-api">URLScan.io</span><span class="apid-detail">' + apiResults[0].total + ' ' + t('link-records-found') + '</span>';
 } else {
 items[0].className = 'lr-api-item apid-clean';
-items[0].innerHTML = '<span class="apid-ico">✓</span><span class="apid-api">URLScan.io</span><span class="apid-detail">' + (LANG === 'ar' ? 'لم يُرصد' : 'Not found in database') + '</span>';
+items[0].innerHTML = '<span class="apid-ico">✓</span><span class="apid-api">URLScan.io</span><span class="apid-detail">' + t('link-not-found-db') + '</span>';
 }
 } else {
 items[0].className = 'lr-api-item apid-na';
-items[0].innerHTML = '<span class="apid-ico">—</span><span class="apid-api">URLScan.io</span><span class="apid-detail">' + (LANG === 'ar' ? 'غير متاح' : 'Unavailable') + '</span>';
+items[0].innerHTML = '<span class="apid-ico">—</span><span class="apid-api">URLScan.io</span><span class="apid-detail">' + t('link-add-key') + '</span>';
 }
 if (apiResults[1]) {
 apiChecked++;
@@ -7412,14 +7548,14 @@ var vtTotal = vtMal + (apiResults[1].harmless || 0) + (apiResults[1].undetected 
 if (vtMal > 0) {
 threatsFound++;
 items[1].className = 'lr-api-item apid-mal';
-items[1].innerHTML = '<span class="apid-ico">✗</span><span class="apid-api">VirusTotal</span><span class="apid-detail">' + vtMal + '/' + vtTotal + ' engines flagged</span>';
+items[1].innerHTML = '<span class="apid-ico">✗</span><span class="apid-api">VirusTotal</span><span class="apid-detail">' + vtMal + '/' + vtTotal + ' ' + t('link-engines-flagged') + '</span>';
 } else {
 items[1].className = 'lr-api-item apid-clean';
-items[1].innerHTML = '<span class="apid-ico">✓</span><span class="apid-api">VirusTotal</span><span class="apid-detail">0/' + vtTotal + ' — clean</span>';
+items[1].innerHTML = '<span class="apid-ico">✓</span><span class="apid-api">VirusTotal</span><span class="apid-detail">0/' + vtTotal + ' — ' + t('link-clean') + '</span>';
 }
 } else {
 items[1].className = 'lr-api-item apid-na';
-items[1].innerHTML = '<span class="apid-ico">—</span><span class="apid-api">VirusTotal</span><span class="apid-detail">' + (LANG === 'ar' ? 'أضف مفتاح API' : 'Add API key') + '</span>';
+items[1].innerHTML = '<span class="apid-ico">—</span><span class="apid-api">VirusTotal</span><span class="apid-detail">' + t('link-add-key') + '</span>';
 }
 if (apiResults[2]) {
 apiChecked++;
@@ -7431,25 +7567,25 @@ return m.threatType;
 }).join(', ') + '</span>';
 } else {
 items[2].className = 'lr-api-item apid-clean';
-items[2].innerHTML = '<span class="apid-ico">✓</span><span class="apid-api">Google Safe Browsing</span><span class="apid-detail">' + (LANG === 'ar' ? 'نظيف' : 'Clean') + '</span>';
+items[2].innerHTML = '<span class="apid-ico">✓</span><span class="apid-api">Google Safe Browsing</span><span class="apid-detail">' + t('link-clean') + '</span>';
 }
 } else {
 items[2].className = 'lr-api-item apid-na';
-items[2].innerHTML = '<span class="apid-ico">—</span><span class="apid-api">Google Safe Browsing</span><span class="apid-detail">' + (LANG === 'ar' ? 'أضف مفتاح API' : 'Add API key') + '</span>';
+items[2].innerHTML = '<span class="apid-ico">—</span><span class="apid-api">Google Safe Browsing</span><span class="apid-detail">' + t('link-add-key') + '</span>';
 }
 if (apiResults[3]) {
 apiChecked++;
 if (apiResults[3].isPhish) {
 threatsFound++;
 items[3].className = 'lr-api-item apid-mal';
-items[3].innerHTML = '<span class="apid-ico">✗</span><span class="apid-api">PhishTank</span><span class="apid-detail">' + (LANG === 'ar' ? 'تصيد مؤكد' : 'Confirmed phishing') + (apiResults[3].verified ? ' ✓' : '') + '</span>';
+items[3].innerHTML = '<span class="apid-ico">✗</span><span class="apid-api">PhishTank</span><span class="apid-detail">' + t('link-confirmed-phish') + (apiResults[3].verified ? ' ✓' : '') + '</span>';
 } else {
 items[3].className = 'lr-api-item apid-clean';
-items[3].innerHTML = '<span class="apid-ico">✓</span><span class="apid-api">PhishTank</span><span class="apid-detail">' + (LANG === 'ar' ? 'ليس تصيداً' : 'Not phishing') + '</span>';
+items[3].innerHTML = '<span class="apid-ico">✓</span><span class="apid-api">PhishTank</span><span class="apid-detail">' + t('link-not-phishing') + '</span>';
 }
 } else {
 items[3].className = 'lr-api-item apid-na';
-items[3].innerHTML = '<span class="apid-ico">—</span><span class="apid-api">PhishTank</span><span class="apid-detail">' + (LANG === 'ar' ? 'غير متاح' : 'Unavailable') + '</span>';
+items[3].innerHTML = '<span class="apid-ico">—</span><span class="apid-api">PhishTank</span><span class="apid-detail">' + t('link-svc-unavail') + '</span>';
 }
 if (apiResults[4]) {
 apiChecked++;
@@ -7459,30 +7595,30 @@ items[4].className = 'lr-api-item apid-mal';
 items[4].innerHTML = '<span class="apid-ico">✗</span><span class="apid-api">IPQualityScore</span><span class="apid-detail">Risk: ' + apiResults[4].riskScore + '/100' + (apiResults[4].phishing ? ' | Phishing' : '') + (apiResults[4].malware ? ' | Malware' : '') + (apiResults[4].domain_age ? ' | Age: ' + apiResults[4].domain_age : '') + '</span>';
 } else if (apiResults[4].suspicious || apiResults[4].riskScore >= 75) {
 items[4].className = 'lr-api-item apid-sus';
-items[4].innerHTML = '<span class="apid-ico">!</span><span class="apid-api">IPQualityScore</span><span class="apid-detail">Risk: ' + apiResults[4].riskScore + '/100 — ' + (LANG === 'ar' ? 'مشبوه' : 'Suspicious') + '</span>';
+items[4].innerHTML = '<span class="apid-ico">!</span><span class="apid-api">IPQualityScore</span><span class="apid-detail">Risk: ' + apiResults[4].riskScore + '/100 — ' + t('link-suspicious') + '</span>';
 } else {
 items[4].className = 'lr-api-item apid-clean';
 items[4].innerHTML = '<span class="apid-ico">✓</span><span class="apid-api">IPQualityScore</span><span class="apid-detail">Risk: ' + apiResults[4].riskScore + '/100' + (apiResults[4].domain_age ? ' | Age: ' + apiResults[4].domain_age : '') + '</span>';
 }
 } else {
 items[4].className = 'lr-api-item apid-na';
-items[4].innerHTML = '<span class="apid-ico">—</span><span class="apid-api">IPQualityScore</span><span class="apid-detail">' + (LANG === 'ar' ? 'أضف مفتاح API' : 'Add API key') + '</span>';
+items[4].innerHTML = '<span class="apid-ico">—</span><span class="apid-api">IPQualityScore</span><span class="apid-detail">' + t('link-add-key') + '</span>';
 }
 if (headerEl) {
 if (threatsFound > 0) {
-headerEl.textContent = (LANG === 'ar' ? '🚨 ' + threatsFound + ' API رصدت تهديدات من ' + apiChecked : '🚨 ' + threatsFound + ' of ' + apiChecked + ' APIs detected threats');
+headerEl.textContent = (LANG === 'ar' ? '🚨 ' + threatsFound + ' ' + t('link-threats-found') + ' ' + apiChecked : '🚨 ' + threatsFound + ' of ' + apiChecked + ' ' + t('link-threats-found'));
 headerEl.style.color = '#ff3c5a';
 } else if (apiChecked > 0) {
-headerEl.textContent = (LANG === 'ar' ? '✅ لم تُرصد تهديدات من ' + apiChecked + ' APIs' : '✅ No threats detected across ' + apiChecked + ' APIs');
+headerEl.textContent = (LANG === 'ar' ? '✅ ' + t('link-no-threats') + ' ' + apiChecked + ' APIs' : '✅ ' + t('link-no-threats') + ' ' + apiChecked + ' APIs');
 headerEl.style.color = '#00ff88';
 } else {
-headerEl.textContent = (LANG === 'ar' ? '⚠️ لا مفاتيح API — أضف مفاتيح لفحص متقدم' : '⚠️ No API keys — add keys for advanced scanning');
+headerEl.textContent = '⚠️ ' + t('link-no-keys');
 headerEl.style.color = '#f5a623';
 }
 }
 var section = document.getElementById('linkApiSection');
 if (section) {
-section.insertAdjacentHTML('beforeend', '<div style="text-align:center;margin-top:10px;"><button class="mcb-btn" style="font-size:0.7rem;padding:6px 16px;" onclick="showAPISettings()">🔑 ' + (LANG === 'ar' ? 'إعدادات API' : 'API Settings') + '</button></div>');
+section.insertAdjacentHTML('beforeend', '<div style="text-align:center;margin-top:10px;"><button class="mcb-btn" style="font-size:0.7rem;padding:6px 16px;" onclick="showAPISettings()">🔑 ' + t('link-api-settings') + '</button></div>');
 }
 Promise.all([checkRDAP(hostname), checkURLhaus(url)]).then(function(di) {
 var rdap    = di[0];
@@ -7491,38 +7627,38 @@ var rdapEl = document.getElementById('ldsRDAP');
 if (rdapEl) {
 rdapEl.classList.remove('lr-ds-loading');
 if (rdap) {
-var ageWarn = rdap.isNew ? ' <span class="lds-warn">⚠ NEW DOMAIN</span>' : '';
+var ageWarn = rdap.isNew ? ' <span class="lds-warn">⚠ ' + t('link-new-domain') + '</span>' : '';
 var rows = '';
-if (rdap.created)   rows += '<div class="lds-row"><span class="lds-key">Registered</span><span class="lds-v">' + rdap.created + ageWarn + '</span></div>';
-if (rdap.ageHuman)  rows += '<div class="lds-row"><span class="lds-key">Domain Age</span><span class="lds-v ' + (rdap.isNew ? 'lds-warn' : '') + '">' + rdap.ageHuman + '</span></div>';
-if (rdap.updated)   rows += '<div class="lds-row"><span class="lds-key">Last Updated</span><span class="lds-v">' + rdap.updated + '</span></div>';
-if (rdap.registrar) rows += '<div class="lds-row"><span class="lds-key">Registrar</span><span class="lds-v">' + rdap.registrar + '</span></div>';
-if (rdap.status)    rows += '<div class="lds-row"><span class="lds-key">Status</span><span class="lds-v" style="font-size:0.55rem">' + rdap.status + '</span></div>';
-rdapEl.innerHTML = '<div class="lds-label">WHOIS / RDAP</div>' + (rows || '<div class="lds-row"><span class="lds-v lds-na">Limited data available</span></div>');
+if (rdap.created)   rows += '<div class="lds-row"><span class="lds-key">' + t('link-registered') + '</span><span class="lds-v">' + rdap.created + ageWarn + '</span></div>';
+if (rdap.ageHuman)  rows += '<div class="lds-row"><span class="lds-key">' + t('link-domain-age') + '</span><span class="lds-v ' + (rdap.isNew ? 'lds-warn' : '') + '">' + rdap.ageHuman + '</span></div>';
+if (rdap.updated)   rows += '<div class="lds-row"><span class="lds-key">' + t('link-last-updated') + '</span><span class="lds-v">' + rdap.updated + '</span></div>';
+if (rdap.registrar) rows += '<div class="lds-row"><span class="lds-key">' + t('link-registrar') + '</span><span class="lds-v">' + rdap.registrar + '</span></div>';
+if (rdap.status)    rows += '<div class="lds-row"><span class="lds-key">' + t('link-status') + '</span><span class="lds-v" style="font-size:0.55rem">' + rdap.status + '</span></div>';
+rdapEl.innerHTML = '<div class="lds-label">' + t('link-whois-rdap') + '</div>' + (rows || '<div class="lds-row"><span class="lds-v lds-na">' + t('link-limited-data') + '</span></div>');
 if (rdap.isNew) rdapEl.classList.add('lr-ds-warn');
 } else {
-rdapEl.innerHTML = '<div class="lds-label">WHOIS / RDAP</div><div class="lds-row"><span class="lds-key">Status</span><span class="lds-v lds-na">Unavailable for this TLD</span></div>';
+rdapEl.innerHTML = '<div class="lds-label">' + t('link-whois-rdap') + '</div><div class="lds-row"><span class="lds-key">' + t('link-status') + '</span><span class="lds-v lds-na">' + t('link-unavail-tld') + '</span></div>';
 }
 }
 var uhEl = document.getElementById('ldsURLhaus');
 if (uhEl) {
 uhEl.classList.remove('lr-ds-loading');
 if (urlhaus === null) {
-uhEl.innerHTML = '<div class="lds-label">URLhaus Malware Feed</div><div class="lds-row"><span class="lds-key">Status</span><span class="lds-v lds-na">Service unavailable</span></div>';
+uhEl.innerHTML = '<div class="lds-label">' + t('link-urlhaus') + '</div><div class="lds-row"><span class="lds-key">' + t('link-status') + '</span><span class="lds-v lds-na">' + t('link-svc-unavail') + '</span></div>';
 } else if (!urlhaus.found) {
 uhEl.classList.add('lr-ds-clean');
-uhEl.innerHTML = '<div class="lds-label">URLhaus Malware Feed</div>' +
-'<div class="lds-verdict ldsv-clean">✓ Not in malware database</div>' +
+uhEl.innerHTML = '<div class="lds-label">' + t('link-urlhaus') + '</div>' +
+'<div class="lds-verdict ldsv-clean">✓ ' + t('link-not-malware') + '</div>' +
 '<div class="lds-row" style="margin-top:4px"><span class="lds-key">Source</span><span class="lds-v">abuse.ch URLhaus</span></div>';
 } else {
 uhEl.classList.add('lr-ds-mal');
 var tags = urlhaus.tags.length > 0 ? urlhaus.tags.join(', ') : '—';
-uhEl.innerHTML = '<div class="lds-label">URLhaus Malware Feed</div>' +
-'<div class="lds-verdict ldsv-mal">✗ LISTED — ' + (urlhaus.threat || 'Malware') + '</div>' +
-'<div class="lds-row"><span class="lds-key">Feed Status</span><span class="lds-v lds-mal">' + urlhaus.status + '</span></div>' +
-'<div class="lds-row"><span class="lds-key">Tags</span><span class="lds-v">' + tags + '</span></div>' +
-(urlhaus.dateAdded ? '<div class="lds-row"><span class="lds-key">Added</span><span class="lds-v">' + urlhaus.dateAdded.split(' ')[0] + '</span></div>' : '') +
-(urlhaus.urlhausRef ? '<div class="lds-row"><span class="lds-key">Report</span><span class="lds-v"><a class="lds-urlhaus-link" href="' + urlhaus.urlhausRef + '" target="_blank" rel="noopener">URLhaus ↗</a></span></div>' : '');
+uhEl.innerHTML = '<div class="lds-label">' + t('link-urlhaus') + '</div>' +
+'<div class="lds-verdict ldsv-mal">✗ ' + t('link-listed') + ' — ' + (urlhaus.threat || 'Malware') + '</div>' +
+'<div class="lds-row"><span class="lds-key">' + t('link-feed-status') + '</span><span class="lds-v lds-mal">' + urlhaus.status + '</span></div>' +
+'<div class="lds-row"><span class="lds-key">' + t('link-tags') + '</span><span class="lds-v">' + tags + '</span></div>' +
+(urlhaus.dateAdded ? '<div class="lds-row"><span class="lds-key">' + t('link-added') + '</span><span class="lds-v">' + urlhaus.dateAdded.split(' ')[0] + '</span></div>' : '') +
+(urlhaus.urlhausRef ? '<div class="lds-row"><span class="lds-key">' + t('link-report') + '</span><span class="lds-v"><a class="lds-urlhaus-link" href="' + urlhaus.urlhausRef + '" target="_blank" rel="noopener">URLhaus ↗</a></span></div>' : '');
 }
 }
 });
@@ -7697,6 +7833,8 @@ html += '<div class="breach-privacy-note">' + (LANG === 'ar' ? '✅ إيميلك
 }
 html += '<div style="text-align:center">' + '<button class="breach-again-btn" onclick="document.getElementById(\'breachInput\').value=\'\';document.getElementById(\'breachInput\').focus();document.getElementById(\'breachResults\').style.display=\'none\';">' + '🔄 ' + (LANG === 'ar' ? 'فحص إيميل آخر' : 'Check another email') + '</button></div>';
 res.innerHTML = html;
+var breachTips = document.getElementById('breachProtectTips');
+if (breachTips) breachTips.style.display = '';
 } catch (e) {
 res.innerHTML = '<div class="breach-error">' + (LANG === 'ar' ? '⚠️ تعذّر الاتصال بخدمة فحص التسريبات.' : '⚠️ Could not connect to breach database.') + '<br><span style="font-size:0.65rem;color:var(--muted);margin-top:6px;display:inline-block">' + (LANG === 'ar' ? 'تحقق من اتصالك بالإنترنت وأعد المحاولة.' : 'Check your internet connection and try again.') + '</span></div>';
 }
@@ -8013,6 +8151,18 @@ initEncyclopedia();
 initParentGuide();
 applyLang();
 setTimeout(animateAllCounters, 200);
+setTimeout(updateAboutStats, 500);
+}
+function updateAboutStats() {
+var el;
+el = document.getElementById('about-stat-reports');
+if (el) el.textContent = (typeof reports !== 'undefined' ? reports.length : 0) + '+';
+el = document.getElementById('about-stat-scenarios');
+if (el) el.textContent = (typeof SCENARIOS !== 'undefined' ? SCENARIOS.length : 0) + '+';
+el = document.getElementById('about-stat-articles');
+if (el) el.textContent = (typeof KB_ITEMS !== 'undefined' ? KB_ITEMS.length : 0);
+el = document.getElementById('about-stat-news');
+if (el) el.textContent = (typeof NEWS_DATA !== 'undefined' ? NEWS_DATA.length : 0);
 }
 var TOUR_STEPS = [{
 icon: '🛡️',
@@ -8538,7 +8688,7 @@ n.desc.toLowerCase().includes(_newsSearch);
 return catOk && searchOk;
 });
 if (items.length === 0) {
-feed.innerHTML = '<div class="news-empty">No results found for your search.</div>';
+feed.innerHTML = '<div class="news-empty">' + t('news-no-results') + '</div>';
 return;
 }
 feed.innerHTML = items.map(function(n, i) {
@@ -8696,7 +8846,7 @@ fetchURLhausThreats();
 function fetchURLhausThreats() {
 var container = document.getElementById('alertsLiveFeed');
 if (!container) return;
-container.innerHTML = '<div class="urlhaus-loading">⟳ Fetching live threat intelligence from abuse.ch…</div>';
+container.innerHTML = '<div class="urlhaus-loading">⟳ ' + t('alerts-fetching') + '</div>';
 fetch('https://urlhaus-api.abuse.ch/v1/urls/recent/', {
 method: 'POST',
 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -8753,10 +8903,10 @@ var raw = inp.value.replace(/\s+/g,'').replace(/^\+965/,'').replace(/^965/,'');
 var results = document.getElementById('phoneResults');
 if (!results) return;
 if (!raw || raw.length < 7) {
-results.innerHTML = _phCard('warn','⚠ Invalid Number','Please enter an 8-digit Kuwait number without the +965 prefix.',[]);
+results.innerHTML = _phCard('warn','⚠ ' + t('phone-invalid-num'), t('phone-invalid-desc'),[]);
 return;
 }
-results.innerHTML = '<div class="ph-scanning"><div class="ph-scan-ring"></div><span>Scanning databases…</span></div>';
+results.innerHTML = '<div class="ph-scanning"><div class="ph-scan-ring"></div><span>' + t('phone-scanning') + '</span></div>';
 _phoneScanCount++;
 localStorage.setItem('sk_phone_scans', _phoneScanCount);
 var cntEl = document.getElementById('phoneScanCount');
@@ -8814,7 +8964,7 @@ results.innerHTML = '<div class="ph-result ph-result-safe">' +
 '<div class="ph-result-banner" style="background:#00a855;">✓ NOT IN SCAM DATABASE</div>' +
 '<div class="ph-result-number">' + numFmt + '</div>' +
 carrierHtml +
-'<div class="ph-note">No reports found for this number. This does not guarantee safety — new scam numbers appear daily. If you received a suspicious call, report it below.</div>' +
+'<div class="ph-note">' + t('phone-no-reports') + '</div>' +
 '<div class="ph-actions">' +
 '<div class="ph-action">💡 Still suspicious? Paste the message in the AI Scam Detector (Tab 02)</div>' +
 '<div class="ph-action">🔒 Never share OTP, PIN, or card details over the phone</div>' +
@@ -8866,7 +9016,7 @@ var list = document.getElementById('phoneCommunityList');
 if (!list) return;
 var labels = { investment:'Investment Scam', impersonation:'Impersonation', otp:'OTP Theft', charity:'Fake Charity', other:'Other' };
 if (_communityPhoneReports.length === 0) {
-list.innerHTML = '<div style="color:var(--muted);padding:1.5rem;text-align:center;font-size:0.78rem;border:1px dashed var(--border);border-radius:12px;">No community reports yet. Be the first to report a scam number.</div>';
+list.innerHTML = '<div style="color:var(--muted);padding:1.5rem;text-align:center;font-size:0.78rem;border:1px dashed var(--border);border-radius:12px;">' + t('phone-community-empty') + '</div>';
 return;
 }
 list.innerHTML = _communityPhoneReports.slice(0,10).map(function(r) {
@@ -9082,7 +9232,7 @@ var searchOk = !_encSearch || e.title.toLowerCase().includes(_encSearch) || e.su
 return catOk && searchOk;
 });
 if (items.length === 0) {
-grid.innerHTML = '<div style="color:var(--muted);padding:2rem;text-align:center;grid-column:1/-1;">No scam types found matching your search.</div>';
+grid.innerHTML = '<div style="color:var(--muted);padding:2rem;text-align:center;grid-column:1/-1;">' + t('enc-no-scam') + '</div>';
 return;
 }
 var sevMap = { critical: '#ff2244', high: '#ff6600', medium: '#ffcc00' };
@@ -9402,3 +9552,4 @@ var tick = el.querySelector('.pg-check-tick');
 if (tick) tick.textContent = saved[id] ? '✓' : '';
 }
 }
+
