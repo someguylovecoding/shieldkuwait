@@ -12,7 +12,7 @@
 <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&display=swap">
-<link rel="stylesheet" href="styles.css?v=14">
+<link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
 <div id="splash" class="sp">
@@ -420,7 +420,7 @@ oninput="autoGrowChatInput(this)"></textarea>
 <div class="stats-hero-pretag">// LIVE THREAT INTELLIGENCE</div>
 <h2 data-i18n="stats-title">Live Statistics</h2>
 <p data-i18n="stats-subtitle">Real-time threat intelligence dashboard for Kuwait — updated live from community reports.</p>
-<div class="stats-kpi-grid">
+<div class="stats-kpi-grid reveal-cascade">
 <div class="stats-kpi-card" style="--kc:#00d4ff">
 <div class="stats-kpi-icon">📋</div>
 <div class="stats-kpi-num" id="st-total">—</div>
@@ -448,7 +448,7 @@ oninput="autoGrowChatInput(this)"></textarea>
 <button class="stats-refresh-btn" onclick="renderStats(true)" data-i18n="refresh-now">↻ Refresh Now</button>
 </div>
 <div class="stats-week-row" id="statsWeekRow"></div>
-<div class="charts-grid">
+<div class="charts-grid reveal-cascade">
 <div class="chart-box">
 <div class="chart-title" data-i18n="type-bars">// threats by type</div>
 <div id="st-type-bars"></div>
@@ -566,7 +566,7 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <span class="absec-title" data-i18n="about-mission-hdr">// OUR MISSION</span>
 <span class="absec-line"></span>
 </div>
-<div class="about-mission">
+<div class="about-mission reveal-cascade">
 <div class="about-mission-card">
 <div class="amis-ico">🎯</div>
 <div class="amis-content">
@@ -596,7 +596,7 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <span class="absec-title" data-i18n="about-modules-hdr">// PLATFORM MODULES</span>
 <span class="absec-line"></span>
 </div>
-<div class="about-modules">
+<div class="about-modules reveal-cascade">
 <div class="amod-card">
 <div class="amod-num">01</div>
 <div class="amod-ico">🗺️</div>
@@ -653,7 +653,7 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <span class="absec-title" data-i18n="about-api-hdr">// API INTEGRATIONS</span>
 <span class="absec-line"></span>
 </div>
-<div class="about-api-grid">
+<div class="about-api-grid reveal-cascade">
 <div class="about-api-card">
 <div class="about-api-ico" style="color:#00d4ff">🔬</div>
 <div class="about-api-name">VirusTotal API v3</div>
@@ -716,7 +716,7 @@ onkeydown="if(event.key==='Enter')scanBreach()">
 <span class="absec-title" data-i18n="about-emg-hdr">// EMERGENCY CONTACTS</span>
 <span class="absec-line"></span>
 </div>
-<div class="about-emergency">
+<div class="about-emergency reveal-cascade">
 <div class="about-emg-card about-emg-primary">
 <div class="aemg-ico">🚨</div>
 <div class="aemg-info">
@@ -1145,6 +1145,65 @@ Report submitted! Thank you for keeping Kuwait safe.
 </div>
 </div>
 <div id="toast"></div>
-<script src="script.js?v=12"></script>
+<script>
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  function scan(){
+    document.querySelectorAll('.reveal:not(.in),.reveal-cascade:not(.in)').forEach(function(el){io.observe(el);});
+  }
+  scan();
+  // re-scan when tabs change; also force-reveal everything in the just-activated page
+  var origSwitch=window.switchTab;
+  if(typeof origSwitch==='function'){
+    window.switchTab=function(id){
+      var r=origSwitch.apply(this,arguments);
+      setTimeout(function(){
+        var p=document.getElementById('page-'+id);
+        if(p)p.querySelectorAll('.reveal,.reveal-cascade').forEach(function(el){el.classList.add('in');});
+        scan();
+      },80);
+      return r;
+    };
+  }
+  // Safety net: any reveal element still hidden after 1.5s gets shown unconditionally
+  setTimeout(function(){
+    document.querySelectorAll('.reveal:not(.in),.reveal-cascade:not(.in)').forEach(function(el){
+      var r=el.getBoundingClientRect();
+      if(r.width>0&&r.height>0)el.classList.add('in');
+    });
+  },1500);
+  // count-up for KPI numbers
+  function countUp(el,target,dur){
+    var start=performance.now(),from=0;
+    function tick(now){
+      var p=Math.min(1,(now-start)/dur);
+      var eased=1-Math.pow(1-p,3);
+      var val=Math.floor(from+(target-from)*eased);
+      el.textContent=val+(el.dataset.suffix||'');
+      if(p<1)requestAnimationFrame(tick);else el.textContent=target+(el.dataset.suffix||'');
+    }
+    requestAnimationFrame(tick);
+  }
+  var kpiObs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target;
+      var raw=el.textContent.trim();
+      var m=raw.match(/^(\d+)([+%kKmMbB]*)$/);
+      if(m){el.dataset.suffix=m[2]||'';countUp(el,parseInt(m[1],10),900);}
+      kpiObs.unobserve(el);
+    });
+  },{threshold:0.4});
+  setTimeout(function(){
+    document.querySelectorAll('.absb-num,.stats-kpi-num,.sim-kpi-num,.ts-num').forEach(function(el){kpiObs.observe(el);});
+  },400);
+})();
+</script>
+<script src="script.js?v=13"></script>
 </body>
 </html>
