@@ -9447,4 +9447,3 @@ var tick = el.querySelector('.pg-check-tick');
 if (tick) tick.textContent = saved[id] ? '✓' : '';
 }
 }
-
